@@ -26,6 +26,14 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+          
+      - name: Debug - list built files
+        run: |
+          echo "Contents of _site:"
+          ls -la _site/
+          echo ""
+          echo "Looking for index.html:"
+          find _site -name "index.html"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
