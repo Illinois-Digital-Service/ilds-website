@@ -33,3 +33,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           destination_dir: ${{ github.ref_name }}
+
+      - name: Print preview URL
+        run: |
+          echo ""
+          echo "============================================"
+          echo "✅ Preview deployed!"
+          echo ""
+          echo "🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
+          echo "============================================"
+          echo ""
