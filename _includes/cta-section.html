@@ -1,0 +1,24 @@
+<section class="cta-section" style="
+  {% if include.bg_image %}background-image: url('{{ include.bg_image | relative_url }}');{% endif %}
+  {% if include.bg_color %}background-color: {{ include.bg_color }};{% endif %}
+  {% if include.text_color %}color: {{ include.text_color }};{% endif %}
+">
+  <div class="container">
+    {% if include.label %}
+      <span class="label">{{ include.label }}</span>
+    {% endif %}
+    {% if include.heading %}
+      {% if include.heading_url %}
+        <h2><a href="{{ include.heading_url }}" class="link-underline link-with-arrow" {% if include.link_color %}style="color: {{ include.link_color }}; --link-color: {{ include.link_color }};"{% endif %}><span>{{ include.heading }}</span>{% include glitch-arrow.html %}</a></h2>
+      {% else %}
+        <h2>{{ include.heading }}</h2>
+      {% endif %}
+    {% endif %}
+    {% if include.body %}
+      <p>{{ include.body }}</p>
+    {% endif %}
+    {% if include.link_text and include.link_url %}
+      <a href="{{ include.link_url }}" class="link-underline" {% if include.link_color %}style="color: {{ include.link_color }}; --link-color: {{ include.link_color }};"{% endif %}>{{ include.link_text }}</a>
+    {% endif %}
+  </div>
+</section>
