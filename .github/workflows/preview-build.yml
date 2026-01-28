@@ -1,0 +1,54 @@
+name: Deploy Preview
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+          
+      - name: Debug - list built files
+        run: |
+          echo "Contents of _site:"
+          ls -la _site/
+          echo ""
+          echo "Looking for index.html:"
+          find _site -name "index.html"
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          destination_dir: ${{ github.ref_name }}
+
+      - name: Print preview URL
+        run: |
+          echo ""
+          echo "============================================"
+          echo "✅ Preview deployed!"
+          echo ""
+          echo ""
+          echo "🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
+          echo "============================================"
+          echo ""
