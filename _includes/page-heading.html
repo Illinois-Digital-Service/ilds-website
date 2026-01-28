@@ -1,0 +1,8 @@
+<section class="page-heading" style="{% if include.bg_image %}background-image: url('{{ include.bg_image | relative_url }}');{% endif %}{% if include.bg_position %}background-position: {{ include.bg_position }};{% endif %}">
+  <div class="container">
+    {% if include.show_logo %}
+    <img src="{{ '/assets/logos/ILDS_logotype_horizontal.svg' | relative_url }}" alt="Illinois Digital Service" class="page-heading-logo">
+    {% endif %}
+    <h1>{{ include.title }}</h1>
+  </div>
+</section>

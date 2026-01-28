@@ -43,13 +43,13 @@ title: Illinois Digital Service
       </div>
     </div>
 
-    <a href="#" class="link-underline"><span>Learn more about us</span></a>
+    <a href="/about/" class="link-underline"><span>Learn more about us</span></a>
   </div>
 </section>
 
 {% include cta-section.html
   heading="Our projects"
-  heading_url="#"
+  heading_url="/projects/"
   bg_color="var(--orange)"
   text_color="var(--cream)"
   link_color="var(--cream)"
@@ -57,7 +57,7 @@ title: Illinois Digital Service
 
 {% include cta-section.html
   heading="Work with IL*DS"
-  heading_url="#"
+  heading_url="/connect/"
   bg_image="/assets/images/background_images/wonderhunt-VnPmEZ95Y1U-unsplash.jpg"
   text_color="var(--cream)"
   link_color="var(--cream)"
