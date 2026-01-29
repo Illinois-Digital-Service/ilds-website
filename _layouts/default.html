@@ -1,13 +1,147 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
     <meta name="robots" content="noindex"> <!-- While in development mode. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     {%- include header.html -%}
-    {{ content }}
+    <main id="main-content">
+      {{ content }}
+    </main>
     {%- include footer.html -%}
+
+    <div id="password-gate">
+      <img src="{{ '/assets/logos/ILDS_logotype_stacked.svg' | relative_url }}" alt="Illinois Digital Service" class="password-logo">
+      <div class="password-box">
+        <h2>Enter Password</h2>
+        <div class="password-input-row">
+          <input type="password" id="password-input" placeholder="Password" autofocus>
+          <button id="password-submit">Submit</button>
+        </div>
+        <p class="password-hint">Need the password? Reach out to Emily or Alex</p>
+        <p id="password-error"></p>
+      </div>
+    </div>
+
+    <style>
+      #password-gate {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('{{ "/assets/images/background_images/prairie.jpg" | relative_url }}');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        z-index: 9999;
+      }
+      #password-gate.hidden { display: none; }
+      .password-logo {
+        max-width: 280px;
+        width: 90%;
+        margin-bottom: 2rem;
+        filter: brightness(0) invert(95%) sepia(10%) saturate(300%) hue-rotate(10deg) drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+      }
+      .password-box {
+        background: var(--cream);
+        padding: 3rem;
+        border-radius: 1rem;
+        text-align: center;
+        font-family: 'General Sans', sans-serif;
+      }
+      .password-box h2 {
+        margin-bottom: 1.5rem;
+        color: var(--green);
+        font-family: 'General Sans', sans-serif;
+        font-weight: 700;
+      }
+      .password-input-row {
+        display: flex;
+        gap: 1rem;
+      }
+      .password-box input {
+        padding: 1.25rem 1.5rem;
+        font-size: 1.5rem;
+        font-family: 'General Sans', sans-serif;
+        font-weight: 700;
+        border: 2px solid var(--green);
+        border-radius: 0.75rem;
+        flex: 1;
+        box-sizing: border-box;
+      }
+      .password-box button {
+        background: var(--blue);
+        color: var(--cream);
+        border: none;
+        padding: 1.25rem 2rem;
+        font-size: 1.5rem;
+        font-family: 'General Sans', sans-serif;
+        font-weight: 700;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .password-box button:hover { opacity: 0.9; }
+      .password-hint {
+        font-size: 1.5rem;
+        color: #000;
+        margin-top: 1rem;
+        margin-bottom: 20;
+      }
+      #password-error {
+        color: var(--red);
+        margin-top: 0.5rem;
+        min-height: 1.5rem;
+      }
+    </style>
+
+    <script>
+      (function() {
+        var gate = document.getElementById('password-gate');
+        var input = document.getElementById('password-input');
+        var submit = document.getElementById('password-submit');
+        var error = document.getElementById('password-error');
+        var h = 'e95666cc1c3310e3e200e1f55330453e7640973237a181cc9ca330bfcd259585';
+
+        if (sessionStorage.getItem('siteUnlocked') === 'true') {
+          gate.classList.add('hidden');
+        }
+
+        async function sha256(str) {
+          var buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+          return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        async function checkPassword() {
+          var inputHash = await sha256(input.value);
+          if (inputHash === h) {
+            sessionStorage.setItem('siteUnlocked', 'true');
+            window.location.href = '{{ "/" | relative_url }}';
+          } else {
+            error.textContent = 'Incorrect password';
+            input.value = '';
+          }
+        }
+
+        submit.addEventListener('click', checkPassword);
+        input.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') checkPassword();
+        });
+      })();
+    </script>
   </body>
 </html>
