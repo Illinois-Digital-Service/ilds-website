@@ -243,6 +243,17 @@ body {
   }
 }
 
+@keyframes fadeRiseIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 main {
   animation: fadeIn 0.5s ease-out;
 }
@@ -440,6 +451,7 @@ main {
   width: auto;
   color: var(--cream);
   fill: var(--cream);
+  animation: fadeRiseIn 0.8s ease-out;
 }
 
 /* Mission */
@@ -864,39 +876,19 @@ main {
   margin: 4rem 0;
 }
 
+.footer-description {
+  max-width: 50%;
+  margin: 0 auto 4rem;
+  text-align: left;
+}
+
+.footer-description p {
+  color: var(--cream);
+  margin: 0;
+}
+
 .footer-bottom {
   text-align: center;
-}
-
-.footer-email {
-  display: inline-block;
-  color: var(--cream);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 6rem; 
-  position: relative;
-  padding-bottom: 1rem;
-  transition: transform var(--transition);
-}
-
-.footer-email::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 0.5rem;
-  background-color: var(--cream);
-  border-radius: 0.25rem;
-  transition: transform var(--transition);
-}
-
-.footer-email:hover {
-  transform: translateY(-0.5rem);
-}
-
-.footer-email:hover::after {
-  transform: translateY(0.5rem);
 }
 
 .footer-sponsor {
