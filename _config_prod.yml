@@ -1,0 +1,4 @@
+# Production overrides for GitHub Pages deployment
+# Build with: jekyll build --config _config.yml,_config_prod.yml
+
+baseurl: "/ilds-website"
