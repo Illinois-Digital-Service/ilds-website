@@ -83,6 +83,7 @@
 /* Typography */
 html {
   font-size: clamp(6px, 2vw, 8px); /* Fluid: 6px min, 8px max, scales with viewport */
+  overflow-y: scroll; /* Prevent layout shift from scrollbar appearing/disappearing */
 }
 
 body {
@@ -140,6 +141,35 @@ label, .label {
   background-position: center;
 }
 
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--blue);
+  color: var(--cream);
+  padding: 1rem 2rem;
+  z-index: 1000;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Underline styling (shared) */
 .underline-bar {
   height: 0.5rem;
@@ -154,6 +184,12 @@ label, .label {
 /* Header */
 .site-header {
   background-color: var(--cream);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all var(--transition);
 }
 
 .site-header .container {
@@ -162,6 +198,53 @@ label, .label {
   align-items: center;
   justify-content: space-between;
   height: 10rem;
+  transition: height var(--transition);
+}
+
+.site-header .logo svg {
+  transition: transform var(--transition);
+}
+
+.site-header .nav-toggle {
+  transition: transform var(--transition);
+}
+
+/* Scrolled state - mobile only */
+@media (max-width: 767px) {
+  .site-header.is-scrolled .container {
+    height: 5rem;
+  }
+
+  .site-header.is-scrolled {
+    padding: .5rem 0;
+  }
+
+  .site-header.is-scrolled .logo svg {
+    transform: scale(0.75);
+  }
+
+  .site-header.is-scrolled .nav-toggle {
+    transform: scale(0.85);
+  }
+}
+
+/* Offset for fixed header */
+body {
+  padding-top: 10rem;
+}
+
+/* Page transition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-out;
 }
 
 .site-header .logo {
@@ -306,6 +389,21 @@ label, .label {
   transform: translateY(0.5rem);
 }
 
+.link-underline:active span {
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
+}
+
+.link-underline:active span::after {
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
+}
+
+.link-underline:active .glitch-arrow {
+  transform: translateX(0);
+  transition: transform 0.1s ease-out;
+}
+
 /* Glitch arrow */
 .glitch-arrow {
   width: 6rem;
@@ -383,7 +481,7 @@ label, .label {
   height: 12rem;
 }
 
-.how-we-work .step h4 {
+.how-we-work .step h3 {
   margin: 0;
 }
 
@@ -400,10 +498,26 @@ label, .label {
 
 /* CTA Section */
 .cta-section {
+  position: relative;
   padding: 10rem 0;
   background-size: cover;
   background-position: center;
   text-align: center;
+}
+
+.cta-section.has-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cta-section .container {
+  position: relative;
+  z-index: 1;
 }
 
 .cta-section .label {
@@ -436,10 +550,26 @@ label, .label {
 
 /* Page Heading */
 .page-heading {
+  position: relative;
   padding: 5rem 0; /* 40px */
   background-color: var(--cream);
   background-size: cover;
   background-position: bottom;
+}
+
+.page-heading.has-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.page-heading .container {
+  position: relative;
+  z-index: 1;
 }
 
 .page-heading-logo {
@@ -499,7 +629,14 @@ label, .label {
 .about-section .link-underline {
   color: var(--blue);
   font-size: inherit;
-  font-weight: 700;
+}
+
+.about-section .link-underline span {
+  padding-bottom: 0.5rem;
+}
+
+.about-section .link-underline span::after {
+  height: 0.25rem;
 }
 
 /* How We Work - About Page */
@@ -589,7 +726,7 @@ label, .label {
   padding: 2rem 3rem;
 }
 
-.team-card h4 {
+.team-card h3 {
   margin: 0 0 0.5rem;
   color: var(--green);
   font-family: var(--font-display);
@@ -851,7 +988,7 @@ label, .label {
 }
 
 .connect-government .link-underline span {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .connect-government .link-underline span::after {
@@ -879,11 +1016,16 @@ label, .label {
 }
 
 .connect-civic-tech .link-underline span {
-  padding-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .connect-civic-tech .link-underline span::after {
   height: 0.25rem;
+}
+
+.connect-civic-tech .airtable-embed {
+  margin: 3rem 0;
+  border-radius: 1rem;
 }
 
 /* ========================================
@@ -915,6 +1057,11 @@ label, .label {
 
   .nav-menu a:hover span {
     transform: translateY(-0.5rem);
+  }
+
+  .nav-menu a:active span {
+    transform: translateY(-0.5rem);
+    transition: transform var(--transition);
   }
 
   .nav-menu a::after {
