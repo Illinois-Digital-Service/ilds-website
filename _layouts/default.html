@@ -1,7 +1,8 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
     <meta name="robots" content="noindex"> <!-- While in development mode. -->
@@ -11,8 +12,11 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     {%- include header.html -%}
-    {{ content }}
+    <main id="main-content">
+      {{ content }}
+    </main>
     {%- include footer.html -%}
   </body>
 </html>

@@ -1,4 +1,4 @@
-<section class="cta-section" style="
+<section class="cta-section{% if include.overlay %} has-overlay{% endif %}" style="
   {% if include.bg_image %}background-image: url('{{ include.bg_image | relative_url }}');{% endif %}
   {% if include.bg_color %}background-color: {{ include.bg_color }};{% endif %}
   {% if include.text_color %}color: {{ include.text_color }};{% endif %}

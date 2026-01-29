@@ -18,28 +18,28 @@ title: Illinois Digital Service
 
 <section class="how-we-work">
   <div class="container">
-    <span class="label">HOW WE WORK</span>
+    <h2 class="label">HOW WE WORK</h2>
 
     <div class="steps">
       <div class="step step-1">
         {% include number-1.html %}
-        <h4>Start small to build momentum</h4>
+        <h3 class="h4">Start small to build momentum</h3>
       </div>
       <div class="step step-2">
         {% include number-2.html %}
-        <h4>Work with those close to the problem</h4>
+        <h3 class="h4">Work with those close to the problem</h3>
       </div>
       <div class="step step-3">
         {% include number-3.html %}
-        <h4>Test ideas with real people</h4>
+        <h3 class="h4">Test ideas with real people</h3>
       </div>
       <div class="step step-4">
         {% include number-4.html %}
-        <h4>Deliver early and often</h4>
+        <h3 class="h4">Deliver early and often</h3>
       </div>
       <div class="step step-5">
         {% include number-5.html %}
-        <h4>Share what we learn</h4>
+        <h3 class="h4">Share what we learn</h3>
       </div>
     </div>
 
@@ -61,5 +61,6 @@ title: Illinois Digital Service
   bg_image="/assets/images/background_images/wonderhunt-VnPmEZ95Y1U-unsplash.jpg"
   text_color="var(--cream)"
   link_color="var(--cream)"
+  overlay=true
 %}
 
