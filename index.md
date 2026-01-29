@@ -43,7 +43,7 @@ title: Illinois Digital Service
       </div>
     </div>
 
-    <a href="/about/" class="link-underline"><span>Learn more about us</span></a>
+    <a href="{{ '/about/' | relative_url }}" class="link-underline"><span>Learn more about us</span></a>
   </div>
 </section>
 

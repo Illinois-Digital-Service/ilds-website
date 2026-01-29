@@ -130,7 +130,7 @@
           var inputHash = await sha256(input.value);
           if (inputHash === h) {
             sessionStorage.setItem('siteUnlocked', 'true');
-            window.location.href = '/';
+            window.location.href = '{{ "/" | relative_url }}';
           } else {
             error.textContent = 'Incorrect password';
             input.value = '';
