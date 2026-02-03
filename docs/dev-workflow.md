@@ -117,7 +117,9 @@ git push origin ars/1/add-dev-workflow-guide
 
 ## 6. ... and check out the preview build!
 
-TK TK
+Our [preview build workflow](https://github.com/Illinois-Digital-Service/ilds-website/blob/main/.github/workflows/preview-build.yml) will automatically generate a preview build for each branch.
+
+To find the preview build URL, look under `checks > build and deploy > Print Preview URL`.
 
 ## 7. Open a pull request
 
@@ -172,6 +174,8 @@ Code review is about the code, not about you. When you get feedback:
 - For PRs that make small dev-related changes (e.g. updating a dependency), two dev approvals work fine.
 
 ## 11. Review the live end result!
+
+GitHub will automatically publish changes when they are merged to `main`.
 
 ## 12. Celebrate!
 
