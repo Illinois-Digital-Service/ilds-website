@@ -34,15 +34,21 @@ Examples: `jn/42/fix-contact-form`, `mc/107/add-faq-page`, `kp/89/update-footer-
 
 This makes it easy to connect branches back to the issue they're solving and helps us know who is working on each branch.
 
-## 3. Working with Git locally
+## 3. Write code!
+
+✨ Coding work happens here. ✨
+
+## 4. Save your work with git
 
 ### The main idea
 
-Before committing, take a moment to review what you're about to save. This helps us avoid accidentally including things like test data, personal information, or files that don't belong.
+Before committing your work, take a moment to review what you're about to save.
+
+This helps us avoid accidentally including things like test data, personal information, or files that don't belong.
 
 ### Working on an issue
 
-**Do your work, then check what changed**
+Check the files that your work touched:
 
 ```bash
 git status
@@ -101,11 +107,19 @@ git push origin jn/42/fix-contact-form
 
 ---
 
-## 4. Write code!
+## 5. Push your branch to GitHub ...
 
-✨ Coding work happens here. ✨
+e.g.:
 
-## 5. Open a pull request
+```
+git push origin ars/1/add-dev-workflow-guide
+```
+
+## 6. ... and check out the preview build!
+
+TK TK
+
+## 7. Open a pull request
 
 ### What's a pull request?
 
@@ -126,7 +140,7 @@ Keep it simple:
 - **How to test** (steps a reviewer can follow)
 - **Screenshots** if it's a visual change
 
-## 6. Request reviews
+## 8. Request reviews
 
 Next request two reviewers using the GitHub interface.
 
@@ -143,7 +157,7 @@ You can **Approve**, **Request changes**, or just **Comment** without blocking.
 
 Try to review within a day or two so that you don't block your teammates.
 
-## 7. Receive and respond to feedback
+## 9. Receive and respond to feedback
 
 Code review is about the code, not about you. When you get feedback:
 - Assume good intent
@@ -151,13 +165,15 @@ Code review is about the code, not about you. When you get feedback:
 - It's fine to disagree — just discuss it respectfully
 - A quick "good catch, fixed!" goes a long way
 
-## 8. Merge
+## 10. Merge
 
 - PRs are ready to merge when they have **two approvals in GitHub**.
 - For PRs that make major content changes, one approval should be from the product owner.
 - For PRs that make small dev-related changes (e.g. updating a dependency), two dev approvals work fine.
 
-## 9. Review the live end result!
+## 11. Review the live end result!
+
+## 12. Celebrate!
 
 ---
 
