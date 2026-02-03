@@ -167,6 +167,14 @@ Code review is about the code, not about you. When you get feedback:
 - For PRs that make major content changes, one approval should be from the product owner.
 - For PRs that make small dev-related changes (e.g. updating a dependency), two dev approvals work fine.
 
+### Who merges?
+
+Team norm: Don't merge your own PR, even once it has two approvals.
+
+Let the second approver hit merge!
+
+Let's test out this norm and see how it goes. We're not too precious about it.
+
 ## 11. Review the live end result!
 
 GitHub will automatically publish changes when they are merged to `main`.
