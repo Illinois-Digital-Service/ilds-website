@@ -83,12 +83,6 @@ git commit -m "Fix contact form validation (#42)"
 
 Including the issue number (with `#`) links the commit to the issue on GitHub. Start with a verb, keep it short and specific.
 
-**Push to GitHub**
-
-```bash
-git push origin jn/42/fix-contact-form
-```
-
 ### Quick pre-commit checklist
 
 - [ ] `git status` — Do I recognize all these files?
@@ -111,8 +105,8 @@ git push origin jn/42/fix-contact-form
 
 e.g.:
 
-```
-git push origin ars/1/add-dev-workflow-guide
+```bash
+git push origin jn/42/fix-contact-form
 ```
 
 ## 6. ... and check out the preview build!
