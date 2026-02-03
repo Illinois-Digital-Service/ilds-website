@@ -42,7 +42,7 @@ This makes it easy to connect branches back to the issue they're solving and hel
 
 ### The main idea
 
-Before committing your work, take a moment to review what you're about to save.
+⚠️ Before committing your work, take a moment to review what you're about to save.
 
 This helps us avoid accidentally including things like test data, personal information, or files that don't belong.
 
@@ -174,6 +174,8 @@ Code review is about the code, not about you. When you get feedback:
 ## 11. Review the live end result!
 
 ## 12. Celebrate!
+
+🎉
 
 ---
 
