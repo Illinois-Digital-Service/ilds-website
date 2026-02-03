@@ -15,9 +15,9 @@ permalink: /projects/
 
   <section class="projects-cards">
     <div class="container">
-      <a href="https://illinoisdigitalservice.substack.com/p/sending-labor-complaints-to-the-right" target="_blank" rel="noopener" class="project-card" aria-label="Labor Rights: Complaints Front Door (opens in new tab)">
+      <a href="https://illinoisdigitalservice.substack.com/p/sending-labor-complaints-to-the-right" target="_blank" rel="noopener" class="project-card" aria-label="Sending Labor Complaints to the Right Place (opens in new tab)">
         <div class="project-card-header">
-          <h2 aria-hidden="true">Labor Rights: Complaints Front Door</h2>
+          <h2 aria-hidden="true">Sending Labor Complaints to the Right Place</h2>
         </div>
         <div class="project-card-body">
           <p>Illinois Digital Service has been working with the Illinois Department of Labor to improve the online "front door" for Illinoisans who need to file a labor complaint.</p>
