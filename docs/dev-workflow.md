@@ -169,11 +169,9 @@ Code review is about the code, not about you. When you get feedback:
 
 ### Who merges?
 
-Team norm: Don't merge your own PR, even once it has two approvals.
+Team norm: Don't merge your own PR, even once it has two approvals. Let the second approver hit merge.
 
-Let the second approver hit merge!
-
-Let's test out this norm and see how it goes. We're not too precious about it.
+(Let's test out this norm and see how it goes. We're not too precious about it.)
 
 ## 11. Review the live end result!
 
