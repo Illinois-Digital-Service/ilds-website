@@ -4,7 +4,7 @@ A Git & GitHub workflow guide for Illinois Digital Service website development.
 
 ---
 
-## Picking up a task
+## 1. Picking up a task
 
 This is where we begin!
 
@@ -14,7 +14,7 @@ We track work to be done through stories on our project sprint board: https://gi
 
 Once you have a task, note the issue number — you'll use it in your branch name.
 
-## Getting set up
+## 2. Getting set up locally
 
 **Pull the latest changes**
 
@@ -34,8 +34,7 @@ Examples: `jn/42/fix-contact-form`, `mc/107/add-faq-page`, `kp/89/update-footer-
 
 This makes it easy to connect branches back to the issue they're solving and helps us know who is working on each branch.
 
-
-## Working with Git locally
+## 3. Working with Git locally
 
 ### The main idea
 
@@ -102,7 +101,11 @@ git push origin jn/42/fix-contact-form
 
 ---
 
-## Pull requests and code review
+## 4. Write code!
+
+Coding work happens here!
+
+## 5. Open a pull request
 
 ### What's a pull request?
 
@@ -113,8 +116,7 @@ A pull request (PR) is how we propose changes. Instead of pushing directly to `m
 - Push your branch to GitHub
 - Open a Pull Request and write a brief description (what changed, why, how to test)
 - Reference the issue in your PR description (e.g., "Closes #42")
-- Request two reviewers
-- Respond to feedback
+- Keep PRs small when possible (easier to review)
 
 ### Writing a good PR description
 
@@ -124,7 +126,11 @@ Keep it simple:
 - **How to test** (steps a reviewer can follow)
 - **Screenshots** if it's a visual change
 
-### Reviewing a PR
+## 6. Request reviews
+
+Next request two reviewers using the GitHub interface.
+
+### Reviewing code
 
 When reviewing someone else's code:
 
@@ -135,26 +141,23 @@ When reviewing someone else's code:
 
 You can **Approve**, **Request changes**, or just **Comment** without blocking.
 
-### Receiving feedback
+Try to review within a day or two so that you don't block your teammates.
+
+## 7. Receive and respond to feedback
 
 Code review is about the code, not about you. When you get feedback:
 - Assume good intent
 - Ask questions if something's unclear
 - It's fine to disagree — just discuss it respectfully
-
-### PR etiquette
-
-- Keep PRs small when possible (easier to review)
-- Review within a day or two so you don't block teammates
 - A quick "good catch, fixed!" goes a long way
 
-### When we merge
+## 8. Merge
 
-PRs are good to merge when they have **two approvals in GitHub**.
+- PRs are ready to merge when they have **two approvals in GitHub**.
+- For PRs that make major content changes, one approval should be from the product owner.
+- For PRs that make small dev-related changes (e.g. updating a dependency), two dev approvals work fine.
 
-For PRs that make major content changes, one approval should be from the product owner.
-
-For PRs that make small dev-related changes (e.g. updating a dependency), two dev approvals work fine.
+## 9. Review the live end result!
 
 ---
 
