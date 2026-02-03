@@ -103,7 +103,7 @@ git push origin jn/42/fix-contact-form
 
 ## 4. Write code!
 
-Coding work happens here!
+✨ Coding work happens here. ✨
 
 ## 5. Open a pull request
 
