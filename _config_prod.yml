@@ -1,4 +1,4 @@
-# Production overrides for GitHub Pages deployment
+# Production overrides for custom domain deployment
 # Build with: jekyll build --config _config.yml,_config_prod.yml
 
-baseurl: "/ilds-website"
+baseurl: "" # Empty for custom domain (illinoisdigitalservice.org)
