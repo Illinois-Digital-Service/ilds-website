@@ -40,12 +40,7 @@ jobs:
           # Give the HTTP server a moment to start
           sleep 5
 
-          pa11y-ci \
-            http://127.0.0.1:4000/ \
-            http://127.0.0.1:4000/about/ \
-            http://127.0.0.1:4000/projects/ \
-            http://127.0.0.1:4000/connect/ \
-            http://127.0.0.1:4000/attribution/
+          pa11y-ci
 
       - name: Stop HTTP server
         if: always()

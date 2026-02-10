@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "standard": "WCAG2AAA",
+    "timeout": 60000,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox"
+      ]
+    }
+  },
+  "urls": [
+    "http://127.0.0.1:4000/",
+    "http://127.0.0.1:4000/about/",
+    "http://127.0.0.1:4000/projects/",
+    "http://127.0.0.1:4000/connect/",
+    "http://127.0.0.1:4000/attribution/"
+  ]
+}
