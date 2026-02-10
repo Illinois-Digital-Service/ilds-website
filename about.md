@@ -172,9 +172,15 @@ permalink: /about/
     <div class="container">
       <h2 class="label">FUNDERS</h2>
       <div class="funders-grid">
-        <a href="https://familiesandworkers.org/" target="_blank" rel="noopener" aria-label="The Families & Workers Fund (opens in new tab)"><img src="{{ '/assets/logos/partner_FWF_logo.svg' | relative_url }}" alt=""></a>
-        <a href="https://p33chicago.com/" target="_blank" rel="noopener" aria-label="P33 (opens in new tab)"><img src="{{ '/assets/logos/partner_P33_logo.svg' | relative_url }}" alt=""></a>
-        <a href="https://www.origamiworks.org/" target="_blank" rel="noopener" aria-label="Origami Works Foundation (opens in new tab)"><img src="{{ '/assets/logos/partner_owf_logo.avif' | relative_url }}" alt=""></a>
+        <a href="https://familiesandworkers.org/" target="_blank" rel="noopener" aria-label="The Families & Workers Fund (opens in new tab)">
+          <img src="{{ '/assets/logos/partner_FWF_logo.svg' | relative_url }}" alt="The Families & Workers Fund - visit The Families & Workers Fund website">
+        </a>
+        <a href="https://p33chicago.com/" target="_blank" rel="noopener" aria-label="P33 (opens in new tab)">
+          <img src="{{ '/assets/logos/partner_P33_logo.svg' | relative_url }}" alt="P33 - visit the P33 website">
+        </a>
+        <a href="https://www.origamiworks.org/" target="_blank" rel="noopener" aria-label="Origami Works Foundation (opens in new tab)">
+          <img src="{{ '/assets/logos/partner_owf_logo.avif' | relative_url }}" alt="Origami Works Foundation - visit the Origami Works Foundation website">
+        </a>
       </div>
     </div>
   </section>
