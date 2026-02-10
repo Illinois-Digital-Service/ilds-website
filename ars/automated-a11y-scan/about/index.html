@@ -301,6 +301,7 @@
         <div class="password-box">
           <h2>Enter Password</h2>
           <div class="password-input-row">
+            <label for="password-input" class="visually-hidden">Password</label>
             <input type="password" id="password-input" placeholder="Password" autofocus>
             <button id="password-submit">Submit</button>
           </div>
@@ -383,6 +384,17 @@
           color: var(--red);
           margin-top: 0.5rem;
           min-height: 1.5rem;
+        }
+        .visually-hidden {
+          border: 0;
+          clip: rect(0 0 0 0);
+          height: 1px;
+          margin: -1px;
+          overflow: hidden;
+          padding: 0;
+          position: absolute;
+          width: 1px;
+          white-space: nowrap;
         }
       </style>
 
