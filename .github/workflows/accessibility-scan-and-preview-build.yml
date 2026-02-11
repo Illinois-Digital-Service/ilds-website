@@ -109,14 +109,6 @@ jobs:
           cp -r _site_production/. pages-artifact/
           cp -r _site/. pages-artifact/preview-deploy/${{ github.ref_name }}/
 
-      - name: Debug - list artifact contents
-        run: |
-          echo "Artifact root:"
-          ls -la pages-artifact/
-          echo ""
-          echo "Preview path:"
-          ls -la pages-artifact/preview-deploy/${{ github.ref_name }}/ || true
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
