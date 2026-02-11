@@ -2,8 +2,8 @@ name: Preview Build and Deploy
 
 on:
   push:
-    branches:
-      - '**'
+    branches-ignore:
+      - main
   workflow_dispatch:
 
 concurrency:
