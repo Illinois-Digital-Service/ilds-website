@@ -71,6 +71,17 @@ jobs:
         run: bundle exec jekyll build --baseurl "preview-deploy/${{ github.ref_name }}"
         env:
           JEKYLL_ENV: production
+
+      - name: Debug - list built site contents
+        run: |
+          echo "Contents of _site:"
+          ls -la _site/
+          echo ""
+          echo "Looking for index.html:"
+          find _site -name "index.html"
+          echo ""
+          echo "Top-level files/dirs in _site:"
+          find _site -maxdepth 2 -type f -o -maxdepth 2 -type d | head -40
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -82,9 +93,6 @@ jobs:
       - name: Preview URL
         run: |
           PREVIEW_URL="https://illinoisdigitalservice.org/preview-deploy/${{ github.ref_name }}/"
-          echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
-          echo "::notice::Preview deployed: $PREVIEW_URL"
           echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔗 **Preview URL:** [$PREVIEW_URL]($PREVIEW_URL)" >> $GITHUB_STEP_SUMMARY
-        id: preview-url
