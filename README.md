@@ -61,7 +61,11 @@ Key files and folders:
 
 This site is configured for GitHub Pages with two workflows:
 
-- **Production** (`.github/workflows/production-deploy.yml`) — Runs on push to `main`. Deploys the live site to the repository’s GitHub Pages site (e.g. `https://illinoisdigitalservice.org`).
-- **Preview** (`.github/workflows/preview-build.yml`) — Runs on push to any non-`main` branch (and via workflow_dispatch). Builds the branch and deploys it alongside the current production site so that production stays at `/` and the branch preview is available at a single, stable URL: **https://illinoisdigitalservice.org/preview-deploy/**.
+1. **Production** (`.github/workflows/production-deploy.yml`) — Runs on push to `main`. Deploys the live site to the repository’s GitHub Pages site, `https://illinoisdigitalservice.org`.
+2. **Preview** (`.github/workflows/preview-build.yml`) — Runs on push to any non-`main` branch and via workflow_dispatch. Builds the branch and deploys it alongside the current production site at `/preview-deploy/`.
 
-Only one deployment (production or preview) runs at a time; they share a concurrency group (`pages-deploy`) so that each run completes without being cancelled. Because each deployment replaces the entire site, there is ever only **one** preview live at a time — the most recently built branch. The preview URL is always the same; you don’t need a different path per branch.
+Deployment notes:
+
+- Only one deployment (production or preview) runs at a time.
+- Because each deployment replaces the entire site, there is just preview live at a time — the most recently built branch.
+- The preview URL is always the same.
