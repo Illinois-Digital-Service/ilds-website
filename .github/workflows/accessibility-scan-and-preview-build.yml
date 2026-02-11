@@ -77,13 +77,12 @@ jobs:
           publish_dir: ./_site
           destination_dir: ${{ github.ref_name }}
 
-      - name: Print preview URL
+      - name: Preview URL
         run: |
-          echo ""
-          echo "============================================"
-          echo "✅ Preview deployed!"
-          echo ""
-          echo ""
-          echo "🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
-          echo "============================================"
-          echo ""
+          PREVIEW_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
+          echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
+          echo "::notice::Preview deployed: $PREVIEW_URL"
+          echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **Preview URL:** [$PREVIEW_URL]($PREVIEW_URL)" >> $GITHUB_STEP_SUMMARY
+        id: preview-url
