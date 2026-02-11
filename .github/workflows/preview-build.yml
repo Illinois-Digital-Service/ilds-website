@@ -1,4 +1,4 @@
-name: Accessibility Scan and Deploy
+name: Preview Build and Deploy
 
 on:
   push:
@@ -10,64 +10,8 @@ permissions:
   contents: write
 
 jobs:
-  a11y-scan:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-
-      - name: Setup Node (for Pa11y CI)
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Cache npm (for Pa11y CI install)
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: npm-${{ runner.os }}-pa11y-ci
-
-      - name: Build Jekyll site
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build
-
-      - name: Serve built site locally
-        run: |
-          cd _site
-          python3 -m http.server 4000 &
-          echo $! > ../server.pid
-
-      - name: Wait for server
-        run: |
-          for i in $(seq 1 15); do
-            curl -sf http://127.0.0.1:4000/ > /dev/null && break
-            sleep 1
-          done
-
-      - name: Install Pa11y CI
-        run: npm install -g pa11y-ci
-
-      - name: Run accessibility scans against main pages
-        run: pa11y-ci
-
-      - name: Stop HTTP server
-        if: always()
-        run: |
-          if [ -f server.pid ]; then
-            kill "$(cat server.pid)" || true
-          fi
-
   preview-build:
     runs-on: ubuntu-latest
-    needs: a11y-scan
     permissions:
       contents: read
       pages: write

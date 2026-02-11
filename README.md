@@ -25,6 +25,29 @@ Illinois Digital Service works shoulder-to-shoulder with Illinois government age
 
 3. Open your browser to `http://localhost:4000`
 
+## Accessibility scan
+
+The repo runs an accessibility scan (Pa11y CI, WCAG 2 AAA) in CI on pull requests. You can run the same scan locally anytime.
+
+**Prerequisites:** Node.js (e.g. v20) and npm.
+
+1. Install Pa11y CI once:
+   ```bash
+   npm install -g pa11y-ci
+   ```
+
+2. Build and serve the site (the scan expects it at `http://127.0.0.1:4000`):
+   ```bash
+   bundle exec jekyll build
+   cd _site && python3 -m http.server 4000
+   ```
+   Leave that server running in one terminal.
+
+3. In another terminal, from the project root, run the scan:
+   ```bash
+   pa11y-ci
+   ```
+
 ## Development
 
 Key files and folders:
