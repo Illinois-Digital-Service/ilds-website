@@ -1,0 +1,50 @@
+name: Accessibility CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  a11y-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Serve built site locally
+        run: |
+          cd _site
+          python3 -m http.server 4000 &
+          echo $! > ../server.pid
+
+      - name: Install Pa11y CI
+        run: npm install -g pa11y-ci
+
+      - name: Run accessibility scans against main pages
+        run: |
+          # Give the HTTP server a moment to start
+          sleep 5
+
+          pa11y-ci
+
+      - name: Stop HTTP server
+        if: always()
+        run: |
+          if [ -f server.pid ]; then
+            kill "$(cat server.pid)" || true
+          fi
