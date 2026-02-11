@@ -87,9 +87,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          destination_dir: "preview-deploy/${{ github.ref_name }}"
-          enable_jekyll: true
+          publish_dir: ./_site  # publish_dir -> "Which folder did my build produce?" -> ./_site
+          destination_dir: "preview-deploy/${{ github.ref_name }}"  # destination_dir -> "Where inside that branch should this deploy live?" -> preview-deploy/pr-42
+          keep_files: true   # important for preview deploys: don't wipe other previews
 
       - name: Preview URL
         run: |
