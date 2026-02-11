@@ -31,8 +31,6 @@ jobs:
           key: npm-${{ runner.os }}-pa11y-ci
 
       - name: Build Jekyll site
-        env:
-          JEKYLL_ENV: production
         run: bundle exec jekyll build
 
       - name: Serve built site locally
