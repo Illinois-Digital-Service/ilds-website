@@ -79,7 +79,7 @@ jobs:
 
       - name: Preview URL
         run: |
-          PREVIEW_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
+          PREVIEW_URL="https://illinoisdigitalservice.org/${{ github.ref_name }}/"
           echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
           echo "::notice::Preview deployed: $PREVIEW_URL"
           echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
