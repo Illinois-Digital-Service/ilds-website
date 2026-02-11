@@ -14,7 +14,7 @@
 
 <!-- If this is a visual change, add before/after screenshots and/or a link to the relevant preview build -->
 
-## Accessibility checks
+## Accessibility and usability checks
 
 + Does the change affect page navigation? -> [Keyboard test](https://doit.illinois.gov/initiatives/accessibility/testing/keyboard.html)
 + Does the change affect colors or contrast? -> [Visual test](https://doit.illinois.gov/initiatives/accessibility/testing/visual.html)
