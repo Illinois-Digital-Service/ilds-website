@@ -54,10 +54,19 @@ jobs:
   preview-build:
     runs-on: ubuntu-latest
     needs: a11y-scan
-    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Checkout
+      - name: Checkout (full for main + current ref)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -65,31 +74,41 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Build Jekyll site
-        # Definition: github.ref_name is the short name of the branch or tag
-        # that triggers the workflow run.
-        run: bundle exec jekyll build --baseurl "/preview-deploy/${{ github.ref_name }}"
+      - name: Build production site (from main)
+        run: |
+          git checkout main
+          bundle exec jekyll build
+          mv _site _site_production
+          git checkout ${{ github.sha }}
+
+      - name: Build preview site (current ref)
+        run: |
+          bundle exec jekyll build --baseurl "/preview-deploy/${{ github.ref_name }}"
         env:
           JEKYLL_ENV: production
 
-      - name: Debug - list built site contents
+      - name: Merge into Pages artifact
         run: |
-          echo "Contents of _site:"
-          ls -la _site/
+          mkdir -p pages-artifact/preview-deploy/${{ github.ref_name }}
+          cp -r _site_production/. pages-artifact/
+          cp -r _site/. pages-artifact/preview-deploy/${{ github.ref_name }}/
+
+      - name: Debug - list artifact contents
+        run: |
+          echo "Artifact root:"
+          ls -la pages-artifact/
           echo ""
-          echo "Looking for index.html:"
-          find _site -name "index.html"
-          echo ""
-          echo "Top-level files/dirs in _site:"
-          find _site -maxdepth 2 -type f -o -maxdepth 2 -type d | head -40
-          
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+          echo "Preview path:"
+          ls -la pages-artifact/preview-deploy/${{ github.ref_name }}/ || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site  # publish_dir -> "Which folder did my build produce?" -> ./_site
-          destination_dir: "preview-deploy/${{ github.ref_name }}"  # destination_dir -> "Where inside that branch should this deploy live?" -> preview-deploy/pr-42
-          keep_files: true   # important for preview deploys: don't wipe other previews
+          path: pages-artifact
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Preview URL
         run: |
