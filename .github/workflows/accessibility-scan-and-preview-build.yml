@@ -68,7 +68,7 @@ jobs:
       - name: Build Jekyll site
         # Definition: github.ref_name is the short name of the branch or tag
         # that triggers the workflow run.
-        run: bundle exec jekyll build --baseurl "/${{ github.ref_name }}"
+        run: bundle exec jekyll build --baseurl "preview-deploy/${{ github.ref_name }}"
         env:
           JEKYLL_ENV: production
           
@@ -77,11 +77,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          destination_dir: ${{ github.ref_name }}
+          destination_dir: "preview-deploy/${{ github.ref_name }}"
 
       - name: Preview URL
         run: |
-          PREVIEW_URL="https://illinoisdigitalservice.org/${{ github.ref_name }}/"
+          PREVIEW_URL="https://illinoisdigitalservice.org/preview-deploy/${{ github.ref_name }}/"
           echo "preview_url=$PREVIEW_URL" >> $GITHUB_OUTPUT
           echo "::notice::Preview deployed: $PREVIEW_URL"
           echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
