@@ -89,6 +89,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           destination_dir: "preview-deploy/${{ github.ref_name }}"
+          enable_jekyll: true
 
       - name: Preview URL
         run: |
