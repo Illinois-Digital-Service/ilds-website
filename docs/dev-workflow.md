@@ -111,9 +111,9 @@ git push origin jn/42/fix-contact-form
 
 ## 6. ... and check out the preview build!
 
-Our [preview build workflow](https://github.com/Illinois-Digital-Service/ilds-website/blob/main/.github/workflows/preview-build.yml) will automatically generate a preview build for each branch.
+Our [preview build workflow](https://github.com/Illinois-Digital-Service/ilds-website/blob/main/.github/workflows/preview-build.yml) will automatically build and deploy your branch. There is a single preview URL (only one branch’s preview is live at a time): **https://illinoisdigitalservice.org/preview-deploy/**
 
-To find the preview build URL, look under `checks > build and deploy > Print Preview URL`.
+To confirm the deploy and see the link in the run summary, look under **Actions → your workflow run → Preview URL** (or in the PR checks, **build and deploy**).
 
 ## 7. Open a pull request
 

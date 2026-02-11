@@ -47,15 +47,15 @@ jobs:
 
       - name: Build preview site (current ref)
         run: |
-          bundle exec jekyll build --baseurl "/preview-deploy/${{ github.ref_name }}"
+          bundle exec jekyll build --baseurl "/preview-deploy"
         env:
           JEKYLL_ENV: production
 
       - name: Merge into Pages artifact
         run: |
-          mkdir -p pages-artifact/preview-deploy/${{ github.ref_name }}
+          mkdir -p pages-artifact/preview-deploy
           cp -r _site_production/. pages-artifact/
-          cp -r _site/. pages-artifact/preview-deploy/${{ github.ref_name }}/
+          cp -r _site/. pages-artifact/preview-deploy/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
@@ -68,7 +68,7 @@ jobs:
 
       - name: Preview URL
         run: |
-          PREVIEW_URL="https://illinoisdigitalservice.org/preview-deploy/${{ github.ref_name }}/"
+          PREVIEW_URL="https://illinoisdigitalservice.org/preview-deploy/"
           echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔗 **Preview URL:** [$PREVIEW_URL]($PREVIEW_URL)" >> $GITHUB_STEP_SUMMARY
