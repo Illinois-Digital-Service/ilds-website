@@ -31,7 +31,7 @@ permalink: /connect/
     </div>
   </section>
 
-  <section class="connect-invest">
+  <section class="connect-government">
     <div class="container">
       <h2>Invest in IL*DS</h2>
       <p>As a nonprofit, we work with donors who share our vision of improving service delivery for Illinoisans.</p>
