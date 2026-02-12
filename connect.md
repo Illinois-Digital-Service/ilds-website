@@ -26,7 +26,7 @@ permalink: /connect/
     <div class="container">
       <h2>Get involved as a civic technologist</h2>
       <p>Do you work in civic technology? Want to put your skills to work for the people of Illinois?</p>
-      <a href="https://airtable.com/embed/appgShkejQPDE0CE6/pagXe4Rs4UfAHbcHC/form" class="link-underline" target="_blank" rel="noopener" aria-label="Talent Network Sign-Up form in Airtable (opens in new tab)">Join our Talent Network to find out about opportunities to support IL*DS projects.</a>
+      <p><a href="https://airtable.com/embed/appgShkejQPDE0CE6/pagXe4Rs4UfAHbcHC/form" class="link-underline" target="_blank" rel="noopener" aria-label="Talent Network Sign-Up form in Airtable (opens in new tab)">Join our Talent Network to find out about opportunities to support IL*DS projects.</a></p>
       <p><strong>Also:</strong> check out our work on <a href="#" class="link-underline"><span>demystifying civic tech hiring in Illinois</span></a>. This short, practical guide provides actionable tips for finding and applying to technology roles with Illinois state and local governments.</p>
     </div>
   </section>
