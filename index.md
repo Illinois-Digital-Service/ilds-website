@@ -11,7 +11,7 @@ title: Illinois Digital Service
 
 <section class="mission">
   <div class="container">
-    <h1>Illinois public technology should be friendly to use for everyone who lives here.</h1>
+    <h1>Making Illinois public services easier to use for everybody who lives here.</h1>
     <p>Illinois Digital Service works shoulder-to-shoulder with Illinois government agencies to deliver better technology, faster.</p>
   </div>
 </section>
