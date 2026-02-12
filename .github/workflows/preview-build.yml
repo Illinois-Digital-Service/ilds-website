@@ -1,20 +1,34 @@
-name: Deploy Preview
+name: Preview Build and Deploy
 
 on:
   push:
-    branches:
-      - '**'
+    branches-ignore:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build-and-deploy:
+  preview-build:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Checkout
+      - name: Checkout (full for main + current ref)
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -22,33 +36,39 @@ jobs:
           ruby-version: '3.3'
           bundler-cache: true
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --baseurl "/${{ github.ref_name }}"
+      - name: Build production site (from main)
         env:
           JEKYLL_ENV: production
-          
-      - name: Debug - list built files
         run: |
-          echo "Contents of _site:"
-          ls -la _site/
-          echo ""
-          echo "Looking for index.html:"
-          find _site -name "index.html"
+          git checkout main
+          bundle exec jekyll build
+          mv _site _site_production
+          git checkout ${{ github.sha }}
+
+      - name: Build preview site (current ref)
+        run: |
+          bundle exec jekyll build --baseurl "/preview-deploy"
+        env:
+          JEKYLL_ENV: preview
+
+      - name: Merge into Pages artifact
+        run: |
+          mkdir -p pages-artifact/preview-deploy
+          cp -r _site_production/. pages-artifact/
+          cp -r _site/. pages-artifact/preview-deploy/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages-artifact
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          destination_dir: ${{ github.ref_name }}
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-      - name: Print preview URL
+      - name: Preview URL
         run: |
-          echo ""
-          echo "============================================"
-          echo "✅ Preview deployed!"
-          echo ""
-          echo ""
-          echo "🔗 https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ github.ref_name }}/"
-          echo "============================================"
-          echo ""
+          PREVIEW_URL="https://illinoisdigitalservice.org/preview-deploy/"
+          echo "## ✅ Preview Deployed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **Preview URL:** [$PREVIEW_URL]($PREVIEW_URL)" >> $GITHUB_STEP_SUMMARY

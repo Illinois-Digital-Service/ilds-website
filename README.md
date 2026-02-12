@@ -25,6 +25,29 @@ Illinois Digital Service works shoulder-to-shoulder with Illinois government age
 
 3. Open your browser to `http://localhost:4000`
 
+## Accessibility scan
+
+The repo runs an accessibility scan (Pa11y CI, WCAG 2 AAA) in CI on pull requests. You can run the same scan locally anytime.
+
+**Prerequisites:** Node.js (e.g. v20) and npm.
+
+1. Install Pa11y CI once:
+   ```bash
+   npm install -g pa11y-ci
+   ```
+
+2. Build and serve the site (the scan expects it at `http://127.0.0.1:4000`):
+   ```bash
+   bundle exec jekyll build
+   cd _site && python3 -m http.server 4000
+   ```
+   Leave that server running in one terminal.
+
+3. In another terminal, from the project root, run the scan:
+   ```bash
+   pa11y-ci
+   ```
+
 ## Development
 
 Key files and folders:
@@ -36,4 +59,13 @@ Key files and folders:
 
 ## Deployment
 
-This site is configured for GitHub Pages and will automatically build and deploy when changes are pushed to the repository's `main` branch.
+This site is configured for GitHub Pages with two workflows:
+
+1. **Production** (`.github/workflows/production-deploy.yml`) — Runs on push to `main`. Deploys the live site to the repository’s GitHub Pages site, `https://illinoisdigitalservice.org`.
+2. **Preview** (`.github/workflows/preview-build.yml`) — Runs on push to any non-`main` branch and via workflow_dispatch. Builds the branch and deploys it alongside the current production site at `/preview-deploy/`.
+
+Deployment notes:
+
+- Only one deployment (production or preview) runs at a time.
+- Because each deployment replaces the entire site, there is just preview live at a time — the most recently built branch.
+- The preview URL is always the same.

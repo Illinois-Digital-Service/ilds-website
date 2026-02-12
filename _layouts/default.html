@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
-    <meta name="robots" content="noindex"> <!-- While in development mode. -->
+    {% if jekyll.environment == "preview" %}
+      <meta name="robots" content="noindex, nofollow">
+    {% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
-  <body>
+  <body class="{% if jekyll.environment == 'preview' %}has-preview-banner{% endif %}">
+    {% if jekyll.environment == "preview" %}
+      <div class="preview-banner" role="status" aria-label="Preview environment">
+        preview!
+      </div>
+    {% endif %}
     <a href="#main-content" class="skip-link">Skip to main content</a>
     {%- include header.html -%}
     <main id="main-content">
@@ -19,7 +26,7 @@
     </main>
     {%- include footer.html -%}
 
-    {% if jekyll.environment == "production" %}
+    {% unless jekyll.environment == "development" %}
       <div id="password-gate">
         <img src="{{ '/assets/logos/ILDS_logotype_stacked.svg' | relative_url }}" alt="Illinois Digital Service" class="password-logo">
         <div class="password-box">
@@ -156,6 +163,6 @@
           });
         })();
       </script>
-    {% endif %}
+    {% endunless %}
   </body>
 </html>
