@@ -158,6 +158,30 @@ label, .label {
   top: 0;
 }
 
+.preview-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: var(--yellow-1);
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.has-preview-banner {
+  padding-top: 13rem;
+}
+
+.has-preview-banner .site-header {
+  top: 3rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

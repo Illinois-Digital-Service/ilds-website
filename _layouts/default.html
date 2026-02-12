@@ -13,7 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
-  <body>
+  <body class="{% if jekyll.environment == 'preview' %}has-preview-banner{% endif %}">
+    {% if jekyll.environment == "preview" %}
+      <div class="preview-banner" role="status" aria-label="Preview environment">
+        preview!
+      </div>
+    {% endif %}
     <a href="#main-content" class="skip-link">Skip to main content</a>
     {%- include header.html -%}
     <main id="main-content">
