@@ -163,7 +163,6 @@ permalink: /about/
       <div class="structure-content">
         <h2 class="label">OUR STRUCTURE</h2>
         <p class="lead">Illinois Digital Service is a fiscally-sponsored project of the <a href="https://digitalharbor.org/" target="_blank" rel="noopener">Digital Harbor Foundation<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
-        <p>We are deeply grateful for their support!</p>
       </div>
     </div>
   </section>
