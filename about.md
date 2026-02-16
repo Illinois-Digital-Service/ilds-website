@@ -1,12 +1,12 @@
 ---
 layout: default
-title: About Us | Illinois Digital Service
+title: About | Illinois Digital Service
 permalink: /about/
 ---
 
 <div class="page-about">
   {% include page-heading.html
-    title="About Us"
+    title="About"
     show_logo=true
     bg_image="/assets/images/background_images/jonnelle-yankovich-eHfntsBAgqk-unsplash.jpg"
     overlay=true
@@ -14,7 +14,7 @@ permalink: /about/
 
   <section class="about-section">
     <div class="container">
-      <h2 class="label">ABOUT US</h2>
+      <h2 class="label">ABOUT</h2>
       <p class="lead">Illinois Digital Service is a network of Illinois-based civic technologists with deep experience working across federal, state, and local government.</p>
       <p>We help government leaders wrestle with the hard work of reimagining public services. We bring skills and expertise in:</p>
 
@@ -163,7 +163,6 @@ permalink: /about/
       <div class="structure-content">
         <h2 class="label">OUR STRUCTURE</h2>
         <p class="lead">Illinois Digital Service is a fiscally-sponsored project of the <a href="https://digitalharbor.org/" target="_blank" rel="noopener">Digital Harbor Foundation<span class="visually-hidden"> (opens in new tab)</span></a>.</p>
-        <p>We are deeply grateful for their support!</p>
       </div>
     </div>
   </section>
