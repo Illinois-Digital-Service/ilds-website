@@ -981,6 +981,25 @@ main {
   color: var(--black);
 }
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 3.5rem 0 0;
+}
+
+.project-tag {
+  display: inline-block;
+  background-color: var(--blue);
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
 /* Connect Page */
 .connect-government {
   background-color: var(--green);
