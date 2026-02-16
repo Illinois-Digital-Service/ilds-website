@@ -92,64 +92,28 @@ permalink: /about/
     <div class="container">
       <h2 class="label">LEADERSHIP</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3 class="h4">Emily Herrick</h3>
-          <p>Director of Projects</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Alex Soble</h3>
-          <p>Executive Director</p>
-        </div>
+        {% include team-card.html name="Emily Herrick" role="Director of Projects" %}
+        {% include team-card.html name="Alex Soble" role="Executive Director" %}
       </div>
       <br/>
       <br/>
       <h2 class="label">CONTRIBUTORS</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3 class="h4">Omar Gonzalez</h3>
-          <p>Talent Advisor</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Nathalie Rayter</h3>
-          <p>Product Manager</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Kaleigh Simmons</h3>
-          <p>Co-Founder and Content Designer</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Savannah Million</h3>
-          <p>UX Designer</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Daniel Onibokun</h3>
-          <p>Civic Tech Apprentice</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Andrew McCaskill</h3>
-          <p>Civic Tech Apprentice</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Paige Wilson-Coleman</h3>
-          <p>Civic Tech Apprentice</p>
-        </div>
+        {% include team-card.html name="Omar Gonzalez" role="Talent Advisor" %}
+        {% include team-card.html name="Nathalie Rayter" role="Product Manager" %}
+        {% include team-card.html name="Kaleigh Simmons" role="Co-Founder and Content Designer" %}
+        {% include team-card.html name="Savannah Million" role="UX Designer" %}
+        {% include team-card.html name="Daniel Onibokun" role="Civic Tech Apprentice" %}
+        {% include team-card.html name="Andrew McCaskill" role="Civic Tech Apprentice" %}
+        {% include team-card.html name="Paige Wilson-Coleman" role="Civic Tech Apprentice" %}
       </div>
       <br/>
       <br/>
       <h2 class="label">ADVISORY COMMITTEE</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3 class="h4">Andrew Coy</h3>
-          <p>Advisor</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Frank Zhu</h3>
-          <p>Advisor</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Jennifer Phillips</h3>
-          <p>Advisor</p>
-        </div>
+        {% include team-card.html name="Andrew Coy" role="Advisor" %}
+        {% include team-card.html name="Frank Zhu" role="Advisor" %}
+        {% include team-card.html name="Jennifer Phillips" role="Advisor" %}
       </div>
     </div>
   </section>
