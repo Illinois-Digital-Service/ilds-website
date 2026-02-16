@@ -90,40 +90,28 @@ permalink: /about/
 
   <section class="team-section">
     <div class="container">
-      <h2 class="label">OUR TEAM</h2>
-
+      <h2 class="label">LEADERSHIP</h2>
       <div class="team-grid">
-        <div class="team-card">
-          <h3 class="h4">Andrew Coy</h3>
-          <p>Advisor</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Bryan Boyer</h3>
-          <p>Project Management</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Omar Gonzalez</h3>
-          <p>Talent Advisor</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Pam Hastings</h3>
-          <p>UX Design</p>
-        </div>
         <div class="team-card">
           <h3 class="h4">Emily Herrick</h3>
           <p>Director of Projects</p>
         </div>
         <div class="team-card">
-          <h3 class="h4">Jen Philips</h3>
-          <p>Workforce Advisor</p>
+          <h3 class="h4">Alex Soble</h3>
+          <p>Executive Director</p>
+        </div>
+      </div>
+      <br/>
+      <br/>
+      <h2 class="label">CONTRIBUTORS</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <h3 class="h4">Omar Gonzalez</h3>
+          <p>Talent Advisor</p>
         </div>
         <div class="team-card">
           <h3 class="h4">Nathalie Rayter</h3>
           <p>Product Manager</p>
-        </div>
-        <div class="team-card">
-          <h3 class="h4">Tyler Richardett</h3>
-          <p>Data</p>
         </div>
         <div class="team-card">
           <h3 class="h4">Kaleigh Simmons</h3>
@@ -142,15 +130,24 @@ permalink: /about/
           <p>Civic Tech Apprentice</p>
         </div>
         <div class="team-card">
-          <h3 class="h4">Alex Soble</h3>
-          <p>Executive Director</p>
-        </div>
-        <div class="team-card">
           <h3 class="h4">Paige Wilson-Coleman</h3>
           <p>Civic Tech Apprentice</p>
         </div>
+      </div>
+      <br/>
+      <br/>
+      <h2 class="label">ADVISORY COMMITTEE</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <h3 class="h4">Andrew Coy</h3>
+          <p>Advisor</p>
+        </div>
         <div class="team-card">
           <h3 class="h4">Frank Zhu</h3>
+          <p>Advisor</p>
+        </div>
+        <div class="team-card">
+          <h3 class="h4">Jennifer Phillips</h3>
           <p>Advisor</p>
         </div>
       </div>
