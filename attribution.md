@@ -14,6 +14,9 @@
 - **jonnelle-yankovich-eHfntsBAgqk-unsplash.jpg**
   Photo by [Jonnelle Yankovich](https://unsplash.com/@jonnelleyankovich) on [Unsplash](https://unsplash.com)
 
+- **prairie.jpg**
+  Prairie landscape at Chain O' Lakes State Park, Illinois. Public domain photo via [Good Free Photos](https://www.goodfreephotos.com/united-states/illinois/chain-o-lakes-state-park/illinois-chain-o-lakes-state-park-prairie-landscape.jpg.php)
+
 - **wonderhunt-VnPmEZ95Y1U-unsplash.jpg**
   Photo by [Wonderhunt](https://unsplash.com/@wonderhunt) on [Unsplash](https://unsplash.com)
 
