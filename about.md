@@ -16,7 +16,8 @@ permalink: /about/
     <div class="container">
       <h2 class="label">ABOUT</h2>
       <p class="lead">Illinois Digital Service is a network of Illinois-based civic technologists with deep experience working across federal, state, and local government.</p>
-      <p>We help government leaders wrestle with the hard work of reimagining public services. We bring skills and expertise in:</p>
+      <p>We help government leaders wrestle with the hard work of reimagining public services.</p>
+      <p>We bring skills and expertise in:</p>
 
       <ul class="asterisk-list">
         {% include asterisk-bullet.html bg="var(--lake-1)" fg="var(--cream)" text="Product management" %}
