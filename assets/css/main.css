@@ -101,6 +101,11 @@ h4, .h4,
 h5, .h5 {
   font-family: var(--font-body);
   font-weight: 700;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 .h0 {
@@ -221,11 +226,13 @@ label, .label {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10rem;
+  height: min(10rem, 10vh);
   transition: height var(--transition);
 }
 
 .site-header .logo svg {
+  max-height: min(6rem, 7vh);
+  width: auto;
   transition: transform var(--transition);
 }
 
@@ -254,7 +261,7 @@ label, .label {
 
 /* Offset for fixed header */
 body {
-  padding-top: 10rem;
+  padding-top: min(10rem, 10vh);
 }
 
 /* Page transition */
@@ -457,11 +464,11 @@ main {
 /* Hero */
 .hero {
   position: relative;
-  height: 80vh;
+  height: 64vh;
   background-image: url('../images/background_images/prairie.jpg');
   background-size: cover;
   background-position: center;
-  padding: 15rem 0;
+  padding: 8vh 0;
 }
 
 .hero .container {
@@ -488,6 +495,7 @@ main {
 
 .mission p {
   margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 /* How We Work */
@@ -885,7 +893,7 @@ main {
   font-weight: 700;
   border-radius: 0.5rem;
   transition: background-color var(--transition), color var(--transition);
-  width: 38rem; /* ~304px */
+  width: 48rem;
   text-align: center;
 }
 
@@ -1027,6 +1035,35 @@ main {
 }
 
 .connect-government .link-underline span::after {
+  height: 0.25rem;
+}
+
+.connect-invest {
+  background-color: var(--orange);
+  color: var(--cream);
+  padding: 5rem 0;
+}
+
+.connect-invest h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.connect-invest p {
+  margin-bottom: 2rem;
+}
+
+.connect-invest .link-underline {
+  color: var(--cream);
+  font-size: inherit;
+  --link-color: var(--cream);
+}
+
+.connect-invest .link-underline span {
+  padding-bottom: 0.5rem;
+}
+
+.connect-invest .link-underline span::after {
   height: 0.25rem;
 }
 
@@ -1186,6 +1223,11 @@ main {
   }
 
   .connect-civic-tech .container {
+    max-width: calc(180rem * 6 / 12);
+    margin: 0 auto;
+  }
+
+  .connect-invest .container {
     max-width: calc(180rem * 6 / 12);
     margin: 0 auto;
   }

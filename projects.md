@@ -47,7 +47,7 @@ permalink: /projects/
 </div>
 
 {% include cta-section.html
-  heading="Read about our latest projects"
+  heading="Read more about our latest projects"
   heading_url="https://illinoisdigitalservice.substack.com/"
   bg_color="var(--orange)"
   text_color="var(--cream)"
