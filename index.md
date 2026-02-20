@@ -58,7 +58,7 @@ title: Illinois Digital Service
 {% include cta-section.html
   heading="Work with IL*DS"
   heading_url="/connect/"
-  bg_image="/assets/images/background_images/wonderhunt-VnPmEZ95Y1U-unsplash.jpg"
+  bg_image="/assets/images/background_images/prairie.jpg"
   text_color="var(--cream)"
   link_color="var(--cream)"
   overlay=true
