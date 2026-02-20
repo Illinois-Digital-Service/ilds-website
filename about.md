@@ -15,8 +15,8 @@ permalink: /about/
   <section class="about-section">
     <div class="container">
       <h2 class="label">ABOUT</h2>
-      <p class="lead">Illinois Digital Service is a network of Illinois-based civic technologists with deep experience working across federal, state, and local government.</p>
-      <p>We help government leaders wrestle with the hard work of reimagining public services. We bring skills and expertise in:</p>
+      <p class="lead">We are a network of Illinois-based civic technologists with deep experience working across federal, state, and local government.</p>
+      <p>We help government leaders wrestle with the hard work of reimagining public services, bringing skills and expertise in:</p>
 
       <ul class="asterisk-list">
         {% include asterisk-bullet.html bg="var(--lake-1)" fg="var(--cream)" text="Product management" %}
@@ -27,7 +27,7 @@ permalink: /about/
       </ul>
 
       <p>As a nonprofit technology partner, we offer pro bono services to state and local Illinois government agencies.</p>
-      <p>If you're a government leader looking to improve your service delivery technology, <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>drop us a line</span></a>.</p>
+      <p>If you're a government leader looking to improve your service delivery technology, <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>let's start a conversation</span></a>.</p>
     </div>
   </section>
 

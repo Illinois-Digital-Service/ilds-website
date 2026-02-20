@@ -20,7 +20,7 @@ permalink: /projects/
           <h2 aria-hidden="true">Sending Labor Complaints to the Right Place</h2>
         </div>
         <div class="project-card-body">
-          <p>Illinois Digital Service has been working with the Illinois Department of Labor to improve the online "front door" for Illinoisans who need to file a labor complaint.</p>
+          <p>Partnering with the Illinois Department of Labor to improve the online front door for workers who need to file a labor complaint.</p>
           <ul class="project-tags" aria-label="Project topics">
             <li class="project-tag">Plain language</li>
             <li class="project-tag">User research</li>
@@ -34,7 +34,7 @@ permalink: /projects/
           <h2 aria-hidden="true">Demystifying Government Hiring</h2>
         </div>
         <div class="project-card-body">
-          <p>This guide aims to demystify the process of finding and applying to tech-related roles in Illinois by providing you with knowledge and tips, synthesized from desk research and conversations with applicants and hiring managers.</p>
+          <p>Working to demystify finding and applying to tech-related roles with Illinois state and local agencies.</p>
           <ul class="project-tags" aria-label="Project topics">
             <li class="project-tag">User research</li>
             <li class="project-tag">Plain language</li>

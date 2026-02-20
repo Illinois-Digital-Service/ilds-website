@@ -16,7 +16,7 @@ permalink: /connect/
   <section class="connect-government">
     <div class="container">
       <h2>Get support for your government agency</h2>
-      <p>IL*DS is here to help government agencies across Illinois in building better public service experiences, through modern, human-centered software design and development practices.</p>
+      <p>IL*DS helps government agencies across Illinois build better public service experiences, using human-centered software design and development.</p>
       <p>Interested in a partnership with Illinois Digital Service? Let's chat.</p>
       <p>Connect with IL*DS:
         <a href="mailto:hello@illinoisdigitalservice.org" class="link-underline">
@@ -35,14 +35,14 @@ permalink: /connect/
           <span>Join our Talent Network to find out about opportunities to support IL*DS projects.</span>
         </a>
       </p>
-      <p><strong>Also:</strong> check out our work on <a href="#" class="link-underline"><span>demystifying civic tech hiring in Illinois</span></a>. This short, practical guide provides actionable tips for finding and applying to technology roles with Illinois state and local governments.</p>
+      <p><strong>Also:</strong> check out our work on <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQkUAQO_is5DTW3zX3K36tJGlm-NRnScPEIpFJnEayaM9yH7HW2zIruRwIjM9-2LPn_-zygjFGzHvNx/pub" class="link-underline"><span>demystifying civic tech hiring in Illinois</span></a>.</p>
     </div>
   </section>
 
   <section class="connect-invest">
     <div class="container">
       <h2>Invest in IL*DS</h2>
-      <p>As a nonprofit, we work with donors who share our vision of improving service delivery for Illinoisans.</p>
+      <p>As a nonprofit, we work with donors who share our vision.</p>
       <p>Interested in investing in IL*DS? Let’s chat.</p>
       <p>Connect with IL*DS: <a href="mailto:hello@illinoisdigitalservice.org" class="link-underline"><span>hello@illinoisdigitalservice.org</span></a></p>
     </div>
