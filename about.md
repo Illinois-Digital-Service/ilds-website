@@ -28,7 +28,7 @@ permalink: /about/
       </ul>
 
       <p>As a nonprofit technology partner, we offer pro bono services to state and local Illinois government agencies.</p>
-      <p>If you're a government leader looking to improve your service delivery technology, <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>drop us a line</span></a>.</p>
+      <p>If you're a government leader looking to improve your service delivery technology, <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>let's start a conversation</span></a>.</p>
     </div>
   </section>
 
