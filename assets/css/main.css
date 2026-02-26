@@ -521,8 +521,8 @@ main {
 }
 
 .how-we-work .step .step-number {
-  width: 12rem;
-  height: 12rem;
+  width: 24rem;
+  height: auto;
 }
 
 .how-we-work .step h3 {

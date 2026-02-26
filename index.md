@@ -22,23 +22,23 @@ title: Illinois Digital Service
 
     <div class="steps">
       <div class="step step-1">
-        {% include number-1.html %}
+        <img src="{{ '/assets/images/illustrations/1-monarch.png' | relative_url }}" alt="" class="step-number">
         <h3 class="h4">Start small to build momentum</h3>
       </div>
       <div class="step step-2">
-        {% include number-2.html %}
+        <img src="{{ '/assets/images/illustrations/2-violet.png' | relative_url }}" alt="" class="step-number">
         <h3 class="h4">Work with those close to the problem</h3>
       </div>
       <div class="step step-3">
-        {% include number-3.html %}
+        <img src="{{ '/assets/images/illustrations/3-boat.png' | relative_url }}" alt="" class="step-number">
         <h3 class="h4">Test ideas with real people</h3>
       </div>
       <div class="step step-4">
-        {% include number-4.html %}
+        <img src="{{ '/assets/images/illustrations/4-cardinal.png' | relative_url }}" alt="" class="step-number">
         <h3 class="h4">Deliver early and often</h3>
       </div>
       <div class="step step-5">
-        {% include number-5.html %}
+        <img src="{{ '/assets/images/illustrations/5-corn.png' | relative_url }}" alt="" class="step-number">
         <h3 class="h4">Share what we learn</h3>
       </div>
     </div>
