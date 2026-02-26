@@ -8,7 +8,7 @@ permalink: /connect/
   {% include page-heading.html
     title="Connect"
     show_logo=true
-    bg_image="/assets/images/background_images/antonio-gabola-SRP5wl4Ak88-unsplash.jpg"
+    bg_image="/assets/images/background_images/Gfp-illinois-springfield-street-market.jpg"
     bg_position="center 85%"
     overlay=true
   %}

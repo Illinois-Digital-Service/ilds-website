@@ -8,7 +8,7 @@ permalink: /about/
   {% include page-heading.html
     title="About"
     show_logo=true
-    bg_image="/assets/images/background_images/jonnelle-yankovich-eHfntsBAgqk-unsplash.jpg"
+    bg_image="/assets/images/background_images/jadon-johnson-6C-qwLRNHHE-unsplash.jpg"
     overlay=true
   %}
 
