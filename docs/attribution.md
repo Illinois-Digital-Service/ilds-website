@@ -5,10 +5,10 @@
 - Kankakee, Illinois - zander-betterton-24R77S3ZA5s-unsplash.jpg
 
 - Garden of Gods State Park - haley-hamilton-BHZKY4Jzi_I-unsplash.jpg
-  - [Haley Hamiton via Upsplash](https://unsplash.com/@haleywayphotography)
+  Photo by [Haley Hamiton via Upsplash](https://unsplash.com/@haleywayphotography)
 
 - Capital Building, Springfield Illinois - Gfp-illinois-springfield-street-market.jpg
-   - Photo via Good Free Photos
+   Photo via Good Free Photos
 
 - **antonio-gabola-SRP5wl4Ak88-unsplash.jpg**
   Photo by [Antonio Gabola](https://unsplash.com/@antoniogabola) on [Unsplash](https://unsplash.com)
