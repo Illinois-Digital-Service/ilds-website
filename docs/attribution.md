@@ -2,12 +2,17 @@
 
 ## Background Images
 
-- Kankakee, Illinois - zander-betterton-24R77S3ZA5s-unsplash.jpg
+- **Kankakee, Illinois - zander-betterton-24R77S3ZA5s-unsplash.jpg**
+  - Photo by [Zander Betterton via Unsplash](https://unsplash.com/photos/aerial-view-of-city-near-body-of-water-during-daytime-24R77S3ZA5s)
+  - Free to use under the Unsplash License
+  - Thank you Zander!
 
-- Garden of Gods State Park - haley-hamilton-BHZKY4Jzi_I-unsplash.jpg
-  Photo by [Haley Hamiton via Upsplash](https://unsplash.com/@haleywayphotography)
+- **Garden of Gods State Park - haley-hamilton-BHZKY4Jzi_I-unsplash.jpg**
+  - Photo by [Haley Hamiton via Unsplash](https://unsplash.com/@haleywayphotography)
+  - Free to use under the Unsplash License
+  - Thank you Haley!
 
-- Capital Building, Springfield Illinois - Gfp-illinois-springfield-street-market.jpg
+- **Capital Building, Springfield Illinois - Gfp-illinois-springfield-street-market.jpg**
    Photo via Good Free Photos
 
 - **antonio-gabola-SRP5wl4Ak88-unsplash.jpg**
