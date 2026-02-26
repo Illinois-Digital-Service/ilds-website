@@ -23,22 +23,22 @@
   - Thank you Antonio!
 
 - **david-sink-NBzakkfG9LA-unsplash.jpg**
-  Photo by [David Sink](https://unsplash.com/@davidsink) on [Unsplash](https://unsplash.com)
+  - Photo by [David Sink](https://unsplash.com/@davidsink) on [Unsplash](https://unsplash.com)
   - Free to use under the Unsplash License
   - Thank you David!
 
 - **jonnelle-yankovich-eHfntsBAgqk-unsplash.jpg**
-  Photo by [Jonnelle Yankovich](https://unsplash.com/@jonnelleyankovich) on [Unsplash](https://unsplash.com)
+  - Photo by [Jonnelle Yankovich](https://unsplash.com/@jonnelleyankovich) on [Unsplash](https://unsplash.com)
   - Free to use under the Unsplash License
   - Thank you Jonnelle!
 
 - **prairie.jpg**
-  Prairie landscape at Chain O' Lakes State Park, Illinois. Public domain photo via [Good Free Photos](https://www.goodfreephotos.com/united-states/illinois/chain-o-lakes-state-park/illinois-chain-o-lakes-state-park-prairie-landscape.jpg.php)
+  - Prairie landscape at Chain O' Lakes State Park, Illinois. Public domain photo via [Good Free Photos](https://www.goodfreephotos.com/united-states/illinois/chain-o-lakes-state-park/illinois-chain-o-lakes-state-park-prairie-landscape.jpg.php)
   - Free to use under the CC0 / Public Domain License
   - Thank you photographer!
 
 - **wonderhunt-VnPmEZ95Y1U-unsplash.jpg**
-  Photo by [Wonderhunt](https://unsplash.com/@wonderhunt) on [Unsplash](https://unsplash.com)
+  - Photo by [Wonderhunt](https://unsplash.com/@wonderhunt) on [Unsplash](https://unsplash.com)
   - Free to use under the Unsplash License
   - Thank you Wonderhunt!
 
