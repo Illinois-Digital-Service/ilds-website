@@ -865,6 +865,56 @@ main {
   --svg-fg: var(--corn-1);
 }
 
+/* Process page – single-section layout */
+.page-process .how-we-work-about .lead {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--cream);
+}
+
+.page-process .how-we-work-about .label {
+  margin-bottom: 1.5rem;
+}
+
+.page-process .how-we-work-about .process-cta {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  text-align: center;
+  color: var(--cream);
+  position: relative;
+}
+
+.page-process .how-we-work-about .process-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 0.25rem;
+  background-color: var(--cream);
+  border-radius: 0.125rem;
+  opacity: 0.9;
+}
+
+.page-process .how-we-work-about .link-underline {
+  color: var(--cream);
+}
+
+.page-process .how-we-work-about .link-underline span {
+  padding-bottom: 0.25rem;
+}
+
+.page-process .how-we-work-about .link-underline span::after {
+  background-color: var(--cream);
+  height: 0.25rem;
+}
+
 /* Results Section */
 .results-section {
   background-color: var(--cream);
