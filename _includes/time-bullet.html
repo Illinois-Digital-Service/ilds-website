@@ -1,0 +1,12 @@
+<div class="time-bullet" style="--svg-bg: {{ include.bg | default: 'var(--yellow-1)' }}; --svg-fg: {{ include.fg | default: 'var(--violet-3)' }};">
+  <svg class="time-bullet-icon" fill="none" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="20" cy="20" r="18" fill="var(--svg-bg, #fff)"/>
+    <line x1="20" y1="20" x2="20" y2="11" stroke="var(--svg-fg, #000)" stroke-width="2" stroke-linecap="round"/>
+    <line x1="20" y1="20" x2="26" y2="14" stroke="var(--svg-fg, #000)" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+  <div class="time-bullet-content">
+    <span class="time-bullet-label">Time</span>
+    <span class="time-bullet-separator">•</span>
+    <span class="time-bullet-text">{{ include.text }}</span>
+  </div>
+</div>
