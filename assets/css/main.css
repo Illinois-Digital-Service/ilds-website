@@ -1241,7 +1241,7 @@ main {
 .footer-legal {
   color: var(--cream);
   font-size: 1.5rem;
-  opacity: 0.7;
+  opacity: 1;
   margin-top: 1.5rem;
 }
 
@@ -1271,7 +1271,7 @@ main {
   font-size: 3rem;
   font-weight: 700;
   color: var(--green);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .privacy-section h3 {
@@ -1279,8 +1279,6 @@ main {
   color: var(--blue);
   margin-top: 4rem;
   margin-bottom: 1.5rem;
-  padding-top: 1rem;
-  border-top: 2px solid var(--lake-4);
 }
 
 .privacy-section p {
@@ -1299,9 +1297,14 @@ main {
 }
 
 .privacy-section .privacy-list li strong {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--black);
+  font-family: var(--font-mono);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--blue);
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  opacity: 0.8;
 }
 
 .privacy-section .privacy-list li p {
@@ -1321,9 +1324,7 @@ main {
 }
 
 .privacy-updated {
-  margin-top: 6rem;
-  padding-top: 3rem;
-  border-top: 2px solid var(--lake-4);
+  margin-top: 4rem;
   color: var(--black);
   opacity: 0.6;
 }
@@ -1475,6 +1476,11 @@ main {
   }
 
   .projects-cards .container {
+    max-width: calc(180rem * 6 / 12);
+    margin: 0 auto;
+  }
+
+  .privacy-section .container {
     max-width: calc(180rem * 6 / 12);
     margin: 0 auto;
   }
