@@ -558,8 +558,8 @@ main {
 /* Hero */
 .hero {
   position: relative;
+  background-image: url('../images/background_images/zander-betterton-24R77S3ZA5s-unsplash.jpg');
   height: 64vh;
-  background-image: url('../images/background_images/prairie.jpg');
   background-size: cover;
   background-position: center;
   padding: 8vh 0;
