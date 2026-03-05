@@ -103,7 +103,6 @@ permalink: /about/
         {% include team-card.html name="Nathalie Rayter" role="Product Manager" %}
         {% include team-card.html name="Kaleigh Simmons" role="Co-Founder and Content Designer" %}
         {% include team-card.html name="Savannah Million" role="UX Designer" %}
-        {% include team-card.html name="Daniel Onibokun" role="Civic Tech Apprentice" %}
         {% include team-card.html name="Andrew McCaskill" role="Civic Tech Apprentice" %}
         {% include team-card.html name="Paige Wilson-Coleman" role="Civic Tech Apprentice" %}
       </div>
