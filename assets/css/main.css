@@ -1,7 +1,61 @@
 /* Main stylesheet */
 
 /* Reset */
-*,*::before,*::after{box-sizing:border-box}*{margin:0;padding:0}html{-webkit-text-size-adjust:100%}body{min-height:100vh;-webkit-font-smoothing:antialiased}img,picture,video,canvas,svg{display:block;max-width:100%}input,button,textarea,select{font:inherit}p,h1,h2,h3,h4,h5,h6{overflow-wrap:break-word}a{color:inherit;text-decoration:none}ul,ol{list-style:none}
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+html {
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+ul,
+ol {
+  list-style: none
+}
 
 :root {
   /* Spacing */
@@ -53,7 +107,7 @@
   --monarch-3: #F2BA8E;
   --monarch-4: #F7D9B9;
 
-    /* Colors - Yellows */
+  /* Colors - Yellows */
   --yellow-1: #F4C35E;
   --yellow-2: #F6D076;
   --yellow-3: #F9E49E;
@@ -82,8 +136,10 @@
 
 /* Typography */
 html {
-  font-size: clamp(6px, 2vw, 8px); /* Fluid: 6px min, 8px max, scales with viewport */
-  overflow-y: scroll; /* Prevent layout shift from scrollbar appearing/disappearing */
+  font-size: clamp(6px, 2vw, 8px);
+  /* Fluid: 6px min, 8px max, scales with viewport */
+  overflow-y: scroll;
+  /* Prevent layout shift from scrollbar appearing/disappearing */
 }
 
 body {
@@ -94,11 +150,16 @@ body {
 }
 
 .h0,
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
   font-family: var(--font-body);
   font-weight: 700;
   text-wrap: balance;
@@ -113,17 +174,42 @@ p {
   font-size: 8rem;
 }
 
-h1, .h1 { font-size: 5rem; }
-h2, .h2 { font-size: 4rem; }
-h3, .h3 { font-size: 3.5rem; }
-h4, .h4 { font-size: 3rem; }
-h5, .h5 { font-size: 2.5rem; }
+h1,
+.h1 {
+  font-size: 5rem;
+}
 
-p { font-size: 2rem; }
+h2,
+.h2 {
+  font-size: 4rem;
+}
 
-small, .small { font-size: 1.75rem; }
+h3,
+.h3 {
+  font-size: 3.5rem;
+}
 
-label, .label {
+h4,
+.h4 {
+  font-size: 3rem;
+}
+
+h5,
+.h5 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+small,
+.small {
+  font-size: 1.75rem;
+}
+
+label,
+.label {
   font-family: var(--font-mono);
   font-size: 1.75rem;
   letter-spacing: 0.5rem;
@@ -131,7 +217,8 @@ label, .label {
 
 /* Layout */
 .container {
-  max-width: 180rem; /* 1440px */
+  max-width: 180rem;
+  /* 1440px */
   margin: 0 auto;
   padding: 0 4rem;
 }
@@ -269,6 +356,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -279,6 +367,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -345,8 +434,13 @@ main {
   position: absolute;
 }
 
-.hamburger::before { top: -1rem; }
-.hamburger::after { top: 1rem; }
+.hamburger::before {
+  top: -1rem;
+}
+
+.hamburger::after {
+  top: 1rem;
+}
 
 .nav-toggle.is-open .hamburger {
   background-color: transparent;
@@ -529,11 +623,30 @@ main {
   margin: 0;
 }
 
-.how-we-work .step-1 { --svg-bg: var(--yellow-1); --svg-fg: var(--violet-3); }
-.how-we-work .step-2 { --svg-bg: var(--lake-1); --svg-fg: var(--cream); }
-.how-we-work .step-3 { --svg-bg: var(--corn-1); --svg-fg: var(--yellow-1); }
-.how-we-work .step-4 { --svg-bg: var(--monarch-1); --svg-fg: var(--cardinal-1); }
-.how-we-work .step-5 { --svg-bg: var(--cardinal-2); --svg-fg: var(--corn-1); }
+.how-we-work .step-1 {
+  --svg-bg: var(--yellow-1);
+  --svg-fg: var(--violet-3);
+}
+
+.how-we-work .step-2 {
+  --svg-bg: var(--lake-1);
+  --svg-fg: var(--cream);
+}
+
+.how-we-work .step-3 {
+  --svg-bg: var(--corn-1);
+  --svg-fg: var(--yellow-1);
+}
+
+.how-we-work .step-4 {
+  --svg-bg: var(--monarch-1);
+  --svg-fg: var(--cardinal-1);
+}
+
+.how-we-work .step-5 {
+  --svg-bg: var(--cardinal-2);
+  --svg-fg: var(--corn-1);
+}
 
 .how-we-work .link-underline {
   font-size: 2.5rem;
@@ -595,7 +708,8 @@ main {
 /* Page Heading */
 .page-heading {
   position: relative;
-  padding: 5rem 0; /* 40px */
+  padding: 5rem 0;
+  /* 40px */
   background-color: var(--cream);
   background-size: cover;
   background-position: bottom;
@@ -726,11 +840,30 @@ main {
   opacity: 0.9;
 }
 
-.how-we-work-about .step-1 { --svg-bg: var(--yellow-1); --svg-fg: var(--violet-3); }
-.how-we-work-about .step-2 { --svg-bg: var(--lake-1); --svg-fg: var(--cream); }
-.how-we-work-about .step-3 { --svg-bg: var(--corn-1); --svg-fg: var(--yellow-1); }
-.how-we-work-about .step-4 { --svg-bg: var(--monarch-1); --svg-fg: var(--cardinal-1); }
-.how-we-work-about .step-5 { --svg-bg: var(--cardinal-2); --svg-fg: var(--corn-1); }
+.how-we-work-about .step-1 {
+  --svg-bg: var(--yellow-1);
+  --svg-fg: var(--violet-3);
+}
+
+.how-we-work-about .step-2 {
+  --svg-bg: var(--lake-1);
+  --svg-fg: var(--cream);
+}
+
+.how-we-work-about .step-3 {
+  --svg-bg: var(--corn-1);
+  --svg-fg: var(--yellow-1);
+}
+
+.how-we-work-about .step-4 {
+  --svg-bg: var(--monarch-1);
+  --svg-fg: var(--cardinal-1);
+}
+
+.how-we-work-about .step-5 {
+  --svg-bg: var(--cardinal-2);
+  --svg-fg: var(--corn-1);
+}
 
 /* Results Section */
 .results-section {
@@ -774,7 +907,8 @@ main {
   margin: 0 0 0.5rem;
   color: var(--green);
   font-family: var(--font-display);
-  font-size: 2.25rem; /* 18px */
+  font-size: 2.25rem;
+  /* 18px */
 }
 
 .team-card p {
@@ -869,7 +1003,8 @@ main {
 }
 
 .footer-logo {
-  max-width: 42rem; /* 336px */
+  max-width: 42rem;
+  /* 336px */
   color: var(--cream);
 }
 
@@ -903,7 +1038,8 @@ main {
 }
 
 .footer-divider {
-  height: 0.5rem; /* 4px */
+  height: 0.5rem;
+  /* 4px */
   background-color: #fff;
   margin: 4rem 0;
 }
@@ -942,7 +1078,8 @@ main {
 }
 
 .footer-sponsor-logo {
-  max-width: 42rem; /* 160px */
+  max-width: 42rem;
+  /* 160px */
 }
 
 /* Projects Page */
@@ -1100,6 +1237,98 @@ main {
   border-radius: 1rem;
 }
 
+/* Footer Legal Link */
+.footer-legal {
+  color: var(--cream);
+  font-size: 1.5rem;
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+.footer-legal a {
+  color: inherit;
+  text-decoration: underline;
+  transition: opacity var(--transition);
+}
+
+.footer-legal a:hover {
+  opacity: 1;
+}
+
+/* Privacy Page */
+.privacy-section {
+  background-color: var(--cream);
+  padding: 5rem 0;
+}
+
+.privacy-section .label {
+  display: block;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.privacy-section .lead {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 3rem;
+}
+
+.privacy-section h3 {
+  font-size: 2.5rem;
+  color: var(--blue);
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.privacy-section p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.privacy-section .privacy-list {
+  list-style: disc;
+  padding-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.privacy-section .privacy-list li {
+  margin-bottom: 2.5rem;
+}
+
+.privacy-section .privacy-list li strong {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: var(--blue);
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+  opacity: 0.8;
+}
+
+.privacy-section .privacy-list li p {
+  margin-bottom: 0;
+  color: var(--black);
+}
+
+.privacy-section .link-inline {
+  color: var(--blue);
+  text-decoration: underline;
+  font-weight: 600;
+  transition: opacity var(--transition);
+}
+
+.privacy-section .link-inline:hover {
+  opacity: 0.75;
+}
+
+.privacy-updated {
+  margin-top: 4rem;
+  color: var(--black);
+  opacity: 0.6;
+}
+
 /* ========================================
    Media Queries (Mobile First)
    ======================================== */
@@ -1157,11 +1386,25 @@ main {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .how-we-work .step-1 { grid-column: 1 / 3; }
-  .how-we-work .step-2 { grid-column: 3 / 5; }
-  .how-we-work .step-3 { grid-column: 5 / 7; }
-  .how-we-work .step-4 { grid-column: 2 / 4; }
-  .how-we-work .step-5 { grid-column: 4 / 6; }
+  .how-we-work .step-1 {
+    grid-column: 1 / 3;
+  }
+
+  .how-we-work .step-2 {
+    grid-column: 3 / 5;
+  }
+
+  .how-we-work .step-3 {
+    grid-column: 5 / 7;
+  }
+
+  .how-we-work .step-4 {
+    grid-column: 2 / 4;
+  }
+
+  .how-we-work .step-5 {
+    grid-column: 4 / 6;
+  }
 
   .footer-top {
     flex-direction: row;
@@ -1236,9 +1479,12 @@ main {
     max-width: calc(180rem * 6 / 12);
     margin: 0 auto;
   }
+
+  .privacy-section .container {
+    max-width: calc(180rem * 6 / 12);
+    margin: 0 auto;
+  }
 }
 
 /* Desktop */
-@media (min-width: 1024px) {
-
-}
+@media (min-width: 1024px) {}
