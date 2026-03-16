@@ -16,7 +16,7 @@ title: Illinois Digital Service
   </div>
 </section>
 
-<section class="how-we-work">
+<!-- <section class="how-we-work">
   <div class="container">
     <h2 class="label">HOW WE WORK</h2>
 
@@ -44,6 +44,19 @@ title: Illinois Digital Service
     </div>
 
     <a href="{{ '/about/' | relative_url }}" class="link-underline"><span>Learn more about us</span></a>
+  </div>
+</section> -->
+
+<section class="results-section">
+  <div class="container">
+    <p class="lead">We build technology that:</p>
+
+    <ul class="asterisk-list">
+      {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--violet-2)" text="Gets people what they need with less friction" %}
+      {% include asterisk-bullet.html bg="var(--corn-1)" fg="var(--yellow-1)" text="Creates simple experiences that do not overwhelm" %}
+      {% include asterisk-bullet.html bg="var(--cardinal-2)" fg="var(--corn-1)" text="Delivers accessible services available in many languages" %}
+      {% include asterisk-bullet.html bg="var(--monarch-1)" fg="var(--cardinal-1)" text="Makes life easier for government delivery staff" %}
+    </ul>
   </div>
 </section>
 
