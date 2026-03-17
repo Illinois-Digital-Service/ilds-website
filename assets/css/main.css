@@ -850,7 +850,6 @@ main {
   opacity: 0.9;
 }
 
-<<<<<<< HEAD
 .how-we-work-about .step-1 {
   --svg-bg: var(--yellow-1);
   --svg-fg: var(--violet-3);
@@ -875,7 +874,7 @@ main {
   --svg-bg: var(--cardinal-2);
   --svg-fg: var(--corn-1);
 }
-=======
+
 .page-process .how-we-work-about .step-content p {
   color: var(--green);
   opacity: 1;
