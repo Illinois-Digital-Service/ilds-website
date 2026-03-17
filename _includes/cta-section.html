@@ -9,7 +9,7 @@
     {% endif %}
     {% if include.heading %}
       {% if include.heading_url %}
-        <h2><a href="{{ include.heading_url | relative_url }}" class="link-underline link-with-arrow" {% if include.link_color %}style="color: {{ include.link_color }}; --link-color: {{ include.link_color }};"{% endif %}><span>{{ include.heading }}</span>{% include glitch-arrow.html %}</a></h2>
+        <h2><a href="{{ include.heading_url | relative_url }}" class="link-underline link-with-arrow" {% if include.new_tab %}target="_blank" rel="noopener"{% endif %} {% if include.link_color %}style="color: {{ include.link_color }}; --link-color: {{ include.link_color }};"{% endif %}><span>{{ include.heading }}</span>{% include glitch-arrow.html %}</a></h2>
       {% else %}
         <h2>{{ include.heading }}</h2>
       {% endif %}
