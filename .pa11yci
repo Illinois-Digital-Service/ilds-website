@@ -14,6 +14,6 @@
     "http://127.0.0.1:4000/about/",
     "http://127.0.0.1:4000/projects/",
     "http://127.0.0.1:4000/connect/",
-    "http://127.0.0.1:4000/attribution/"
+    "http://127.0.0.1:4000/process/"
   ]
 }
