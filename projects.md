@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Our Projects | Illinois Digital Service
+title: Projects | Illinois Digital Service
 permalink: /projects/
 ---
 
 <div class="page-projects">
   {% include page-heading.html
-    title="Our Projects"
+    title="Projects"
     show_logo=true
     bg_image="/assets/images/background_images/haley-hamilton-BHZKY4Jzi_I-unsplash.jpg"
     bg_position="center"
@@ -17,7 +17,7 @@ permalink: /projects/
     <div class="container">
       <a href="https://illinoisdigitalservice.substack.com/p/sending-labor-complaints-to-the-right" target="_blank" rel="noopener" class="project-card" aria-label="Sending Labor Complaints to the Right Place (opens in new tab)">
         <div class="project-card-header">
-          <h2 aria-hidden="true">Sending Labor Complaints to the Right Place</h2>
+          <h2 aria-hidden="true">Sending labor complaints to the right place</h2>
         </div>
         <div class="project-card-body">
           <p>Partnering with the Illinois Department of Labor to improve the online front door for workers who need to file a labor complaint.</p>
@@ -31,7 +31,7 @@ permalink: /projects/
 
       <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQkUAQO_is5DTW3zX3K36tJGlm-NRnScPEIpFJnEayaM9yH7HW2zIruRwIjM9-2LPn_-zygjFGzHvNx/pub" target="_blank" rel="noopener" class="project-card" aria-label="Demystifying Government Hiring (opens in new tab)">
         <div class="project-card-header">
-          <h2 aria-hidden="true">Demystifying Government Hiring</h2>
+          <h2 aria-hidden="true">Demystifying government hiring</h2>
         </div>
         <div class="project-card-body">
           <p>Working to demystify finding and applying to tech-related roles with Illinois state and local agencies.</p>
@@ -52,6 +52,7 @@ permalink: /projects/
   bg_color="var(--orange)"
   text_color="var(--cream)"
   link_color="var(--cream)"
+  new_tab=true
 %}
 
 {% include cta-section.html

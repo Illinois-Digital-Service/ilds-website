@@ -1106,9 +1106,18 @@ main {
   transform: translateY(-0.5rem);
 }
 
+.project-card:hover .project-card-header {
+  background-color: #005870;
+}
+
+.project-card:hover .project-card-header h2 {
+  text-decoration: underline;
+}
+
 .project-card-header {
   background-color: var(--blue);
   padding: 4rem;
+  transition: background-color var(--transition);
 }
 
 .project-card-header h2 {
