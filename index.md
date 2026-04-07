@@ -49,14 +49,26 @@ title: Illinois Digital Service
 
 <section class="results-section">
   <div class="container">
-    <p class="lead">We build technology that:</p>
+    <p class="label">WE BUILD TECHNOLOGY THAT</p>
 
-    <ul class="asterisk-list">
-      {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--violet-2)" text="Gets people what they need with less friction" %}
-      {% include asterisk-bullet.html bg="var(--corn-1)" fg="var(--yellow-1)" text="Creates simple experiences that do not overwhelm" %}
-      {% include asterisk-bullet.html bg="var(--cardinal-2)" fg="var(--corn-1)" text="Delivers accessible services available in many languages" %}
-      {% include asterisk-bullet.html bg="var(--monarch-1)" fg="var(--cardinal-1)" text="Makes life easier for government delivery staff" %}
-    </ul>
+    <div class="results-columns">
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/boat.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Gets people what they need with less friction</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/monarch.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Creates simple experiences that do not overwhelm</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/violet.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Delivers accessible services available in many languages</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/cardinal.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Makes life easier for government delivery staff</p>
+      </div>
+    </div>
   </div>
 </section>
 
