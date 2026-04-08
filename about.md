@@ -20,7 +20,8 @@ permalink: /about/
 
       <ul class="asterisk-list">
         {% include asterisk-bullet.html bg="var(--lake-1)" fg="var(--cream)" text="Product management" %}
-        {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--violet-2)" text="User experience research" %}
+        {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--violet-2)" text="User experience research and design" %}
+        {% include asterisk-bullet.html bg="var(--violet-1)" fg="var(--lake-4)" text="Service design" %}
         {% include asterisk-bullet.html bg="var(--corn-1)" fg="var(--yellow-1)" text="Visual and content design" %}
         {% include asterisk-bullet.html bg="var(--monarch-1)" fg="var(--cardinal-1)" text="Software engineering" %}
         {% include asterisk-bullet.html bg="var(--cardinal-2)" fg="var(--corn-1)" text="Data analysis and storytelling" %}
@@ -72,19 +73,6 @@ permalink: /about/
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="results-section">
-    <div class="container">
-      <p class="lead">This results in technology that:</p>
-
-      <ul class="asterisk-list">
-        {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--violet-2)" text="Gets people what they need with less friction" %}
-        {% include asterisk-bullet.html bg="var(--corn-1)" fg="var(--yellow-1)" text="Creates simple experiences that do not overwhelm" %}
-        {% include asterisk-bullet.html bg="var(--cardinal-2)" fg="var(--corn-1)" text="Delivers accessible services available in many languages" %}
-        {% include asterisk-bullet.html bg="var(--monarch-1)" fg="var(--cardinal-1)" text="Makes life easier for government delivery staff" %}
-      </ul>
     </div>
   </section>
 
