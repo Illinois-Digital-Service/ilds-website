@@ -107,7 +107,15 @@ permalink: /process/
         </div>
       </div>
 
-      <p class="process-cta">Ready to get started? <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>Get in touch</span></a>.</p>
     </div>
   </section>
+
+  {% include cta-section.html
+    heading="Ready to get started? Get in touch."
+    heading_url="/connect/"
+    bg_image="/assets/images/background_images/prairie.jpg"
+    text_color="var(--cream)"
+    link_color="var(--cream)"
+    overlay=true
+  %}
 </div>
