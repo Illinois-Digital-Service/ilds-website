@@ -40,7 +40,8 @@ permalink: /process/
           <div class="step-content">
             <h3>Workshop & Prototyping</h3>
             <p><strong>Next, we run a collaborative in-person workshop</strong>.</p>
-            <p>We bring lightweight prototypes to the table, to show what's possible and what new technology could look like.</p>
+            <br/>
+            <p>We bring lightweight prototypes to the table, to show (not tell) what new technology can look like.</p>
             <br/>
             <p>Example Outcomes:</p>
             <ul class="asterisk-list">
@@ -55,9 +56,7 @@ permalink: /process/
           {% include number-3.html %}
           <div class="step-content">
             <h3>Discovery to Delivery</h3>
-            <p><strong>Then, we do research to learn about your users and their needs — and deliver concrete improvements to your services.</strong></p>
-            <br/>
-            <p>We don't learn for learning's sake; we learn to make public services easier to use.</p>
+            <p><strong>Then, we do research to learn about your users and deliver concrete improvements.</strong></p>
             <br/>
             <p>Example Outcomes:</p>
             <ul class="asterisk-list">
