@@ -41,7 +41,7 @@ permalink: /process/
             <h3>Workshop & Prototyping</h3>
             <p><strong>Next, we run a collaborative in-person workshop</strong>.</p>
             <br/>
-            <p>We bring lightweight prototypes to the table, to show (not tell) what new technology can look like.</p>
+            <p>We make lightweight prototypes to show (not tell) what new technology can look like.</p>
             <br/>
             <p>Example Outcomes:</p>
             <ul class="asterisk-list">
