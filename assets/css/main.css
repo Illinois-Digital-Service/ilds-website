@@ -804,6 +804,12 @@ main {
   padding: 5rem 0;
 }
 
+/* Process page: light background, dark text */
+.page-process .how-we-work-about {
+  background-color: var(--cream);
+  color: var(--green);
+}
+
 .how-we-work-about .label {
   display: block;
   text-align: center;
@@ -832,6 +838,10 @@ main {
 .how-we-work-about .step-content h3 {
   margin: 0 0 1rem;
   color: var(--cream);
+}
+
+.page-process .how-we-work-about .step-content h3 {
+  color: var(--green);
 }
 
 .how-we-work-about .step-content p {
@@ -863,6 +873,163 @@ main {
 .how-we-work-about .step-5 {
   --svg-bg: var(--cardinal-2);
   --svg-fg: var(--corn-1);
+}
+
+.page-process .how-we-work-about .step-content p {
+  color: var(--green);
+  opacity: 1;
+}
+
+.how-we-work-about .step-1 { --svg-bg: var(--yellow-1); --svg-fg: var(--violet-3); }
+.how-we-work-about .step-2 { --svg-bg: var(--lake-1); --svg-fg: var(--cream); }
+.how-we-work-about .step-3 { --svg-bg: var(--corn-1); --svg-fg: var(--yellow-1); }
+.how-we-work-about .step-4 { --svg-bg: var(--monarch-1); --svg-fg: var(--cardinal-1); }
+.how-we-work-about .step-5 { --svg-bg: var(--cardinal-2); --svg-fg: var(--corn-1); }
+
+/* Process page: step number circles use same accessible light-bg + dark-fg pairs */
+.page-process .how-we-work-about .step-1 { --svg-bg: var(--yellow-1); --svg-fg: var(--green); }
+.page-process .how-we-work-about .step-2 { --svg-bg: var(--lake-4); --svg-fg: var(--blue); }
+.page-process .how-we-work-about .step-3 { --svg-bg: var(--corn-4); --svg-fg: var(--green); }
+.page-process .how-we-work-about .step-4 { --svg-bg: var(--monarch-4); --svg-fg: var(--orange); }
+.page-process .how-we-work-about .step-5 { --svg-bg: var(--cardinal-4); --svg-fg: var(--red); }
+
+/* Process page – single-section layout, light bg, dark text, clear hierarchy */
+.page-process .how-we-work-about .label {
+  margin-bottom: 1.5rem;
+  color: var(--green);
+  font-size: 1.5rem;
+  letter-spacing: 0.35rem;
+}
+
+.page-process .how-we-work-about .lead {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--green);
+  line-height: 1.3;
+}
+
+.page-process .how-we-work-about .process-note {
+  max-width: 52rem;
+  margin: 0 auto 4rem;
+  padding: 2rem 2.5rem;
+  background-color: var(--off-white);
+  color: var(--green);
+  border: 0.3rem solid var(--green);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+
+.page-process .how-we-work-about .process-note-text {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--green);
+}
+
+.page-process .how-we-work-about .step-content h3 {
+  font-size: 2.5rem;
+}
+
+.page-process .how-we-work-about .step-content p {
+  font-size: 2rem;
+}
+
+.page-process .how-we-work-about .step-content p strong {
+  color: var(--green);
+}
+
+.page-process .how-we-work-about .asterisk-list {
+  margin: 1.5rem 0 2rem;
+}
+
+.page-process .how-we-work-about .asterisk-bullet {
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.page-process .how-we-work-about .asterisk-bullet:last-child {
+  margin-bottom: 0;
+}
+
+.page-process .how-we-work-about .time-bullet {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  color: var(--green);
+  font-size: 2rem;
+}
+
+.page-process .how-we-work-about .time-bullet-label,
+.page-process .how-we-work-about .time-bullet-separator,
+.page-process .how-we-work-about .time-bullet-text {
+  color: var(--green);
+}
+
+.page-process .how-we-work-about .time-bullet-separator {
+  opacity: 0.8;
+}
+
+.page-process .how-we-work-about .process-cta {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  text-align: center;
+  color: var(--green);
+  position: relative;
+}
+
+.page-process .how-we-work-about .process-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 0.25rem;
+  background-color: var(--green);
+  border-radius: 0.125rem;
+  opacity: 0.9;
+}
+
+.page-process .how-we-work-about .link-underline {
+  color: var(--green);
+}
+
+.page-process .how-we-work-about .link-underline span {
+  padding-bottom: 0.25rem;
+}
+
+.page-process .how-we-work-about .link-underline span::after {
+  background-color: var(--green);
+  height: 0.25rem;
+}
+
+.page-process .how-we-work-about .time-bullet-content {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.page-process .how-we-work-about .time-bullet-label {
+  font-weight: 600;
+}
+
+.page-process .how-we-work-about .time-bullet-separator {
+  opacity: 0.7;
+}
+
+.page-process .how-we-work-about .time-bullet-icon {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+}
+
+.page-process .how-we-work-about .time-bullet-text {
+  margin: 0;
 }
 
 /* Results Section */

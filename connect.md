@@ -16,10 +16,13 @@ permalink: /connect/
   <section class="connect-government">
     <div class="container">
       <h2>Get support for your government agency</h2>
-      <p>IL*DS helps government agencies across Illinois build better public service experiences, using human-centered software design and development.</p>
-      <p>Interested in a partnership with Illinois Digital Service? Let's chat.</p>
-      <p>Connect with IL*DS:
-        <a href="mailto:hello@illinoisdigitalservice.org" class="link-underline">
+      <p>IL*DS helps government agencies across Illinois build better public service experiences.</p>
+      <p>
+        <a href="/process" class="link-underline">
+          <span>Learn more about our process.</span>
+        </a>
+      </p>
+      <p>Interested in a partnership? Let's chat: <a href="mailto:hello@illinoisdigitalservice.org" class="link-underline">
           <span>hello@illinoisdigitalservice.org</span>
         </a>
       </p>
@@ -32,8 +35,9 @@ permalink: /connect/
       <p>Do you work in civic technology? Want to put your skills to work for the people of Illinois?</p>
       <p>
         <a href="https://airtable.com/embed/appgShkejQPDE0CE6/pagXe4Rs4UfAHbcHC/form" class="link-underline" target="_blank" rel="noopener" aria-label="Talent Network Sign-Up form in Airtable (opens in new tab)">
-          <span>Join our Talent Network to find out about opportunities to support IL*DS projects.</span>
+          <span>Join our Talent Network</span>
         </a>
+        to find out about opportunities to support our projects.
       </p>
       <p><strong>Also:</strong> check out our work on <a href="https://docs.google.com/document/u/1/d/e/2PACX-1vQkUAQO_is5DTW3zX3K36tJGlm-NRnScPEIpFJnEayaM9yH7HW2zIruRwIjM9-2LPn_-zygjFGzHvNx/pub" class="link-underline"><span>demystifying civic tech hiring in Illinois</span></a>.</p>
     </div>
