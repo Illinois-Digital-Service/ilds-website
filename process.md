@@ -38,8 +38,9 @@ permalink: /process/
         <div class="step step-2">
           {% include number-2.html %}
           <div class="step-content">
-            <h3>Workshop</h3>
+            <h3>Workshop & Prototyping</h3>
             <p><strong>Next, we run a collaborative in-person workshop</strong>.</p>
+            <p>We bring lightweight prototypes to the table, to show what's possible and what new technology could look like.</p>
             <br/>
             <p>Example Outcomes:</p>
             <ul class="asterisk-list">
@@ -54,9 +55,9 @@ permalink: /process/
           {% include number-3.html %}
           <div class="step-content">
             <h3>Discovery to Delivery</h3>
-            <p><strong>Then, we do research to learn about your users and their needs.</strong></p>
+            <p><strong>Then, we do research to learn about your users and their needs — and deliver concrete improvements to your services.</strong></p>
             <br/>
-            <p>We don't learn for learning's sake. We learn to deliver improvements.</p>
+            <p>We don't learn for learning's sake; we learn to make public services easier to use.</p>
             <br/>
             <p>Example Outcomes:</p>
             <ul class="asterisk-list">
@@ -64,7 +65,7 @@ permalink: /process/
               {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="A service design blueprint makes a process clearer" %}
               {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="A data analysis sprint helps you steer your program" %}
             </ul>
-            {% include time-bullet.html bg="var(--corn-4)" fg="var(--green)" text="12 to 15 weeks" %}
+            {% include time-bullet.html bg="var(--corn-4)" fg="var(--green)" text="16 weeks" %}
           </div>
         </div>
         <div class="step step-4">
@@ -83,7 +84,7 @@ permalink: /process/
               {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="A redesigned backend system becomes easier for staff to use" %}
               {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="An interdepartmental process runs faster and smoother" %}
             </ul>
-            {% include time-bullet.html bg="var(--monarch-4)" fg="var(--orange)" text="12 to 24 months" %}
+            {% include time-bullet.html bg="var(--monarch-4)" fg="var(--orange)" text="~12 months" %}
           </div>
         </div>
         <div class="step step-5">
@@ -102,7 +103,7 @@ permalink: /process/
               {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="You feel unstuck when it comes to technology" %}
               {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="You can lead technology and design changes with confidence" %}
             </ul>
-            {% include time-bullet.html bg="var(--cardinal-4)" fg="var(--red)" text="6 to 12 months" %}
+            {% include time-bullet.html bg="var(--cardinal-4)" fg="var(--red)" text="~12 months" %}
           </div>
         </div>
       </div>
