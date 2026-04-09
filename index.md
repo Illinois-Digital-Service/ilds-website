@@ -16,7 +16,7 @@ title: Illinois Digital Service
   </div>
 </section>
 
-<section class="how-we-work">
+<!-- <section class="how-we-work">
   <div class="container">
     <h2 class="label">HOW WE WORK</h2>
 
@@ -44,6 +44,31 @@ title: Illinois Digital Service
     </div>
 
     <a href="{{ '/about/' | relative_url }}" class="link-underline"><span>Learn more about us</span></a>
+  </div>
+</section> -->
+
+<section class="results-section">
+  <div class="container">
+    <p class="label">WE BUILD TECHNOLOGY THAT</p>
+
+    <div class="results-columns">
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/boat.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Gets people what they need with less friction</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/monarch.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Creates simple experiences that do not overwhelm</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/violet.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Delivers accessible services available in many languages</p>
+      </div>
+      <div class="results-column">
+        <img src="{{ '/assets/images/illustrations/cardinal.png' | relative_url }}" alt="" class="results-illustration">
+        <p>Makes life easier for government delivery staff</p>
+      </div>
+    </div>
   </div>
 </section>
 
