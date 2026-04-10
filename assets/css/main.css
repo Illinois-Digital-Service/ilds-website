@@ -853,6 +853,10 @@ main {
   color: var(--cream);
 }
 
+.page-process .how-we-work-about .step {
+  align-items: flex-start;
+}
+
 .page-process .how-we-work-about .step-content h3 {
   color: var(--green);
 }
