@@ -826,13 +826,20 @@ main {
 .how-we-work-about .steps {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .how-we-work-about .step {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
+}
+
+.how-we-work-about .step-illustration {
+  width: 24rem;
+  height: 24rem;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .how-we-work-about .step-number {
@@ -1060,13 +1067,23 @@ main {
 
 .results-column p {
   font-weight: 700;
+  font-size: 2.75rem;
 }
 
-.results-illustration {
+.results-column .step-number {
   width: 16rem;
   height: 16rem;
-  object-fit: contain;
   margin-bottom: 1.5rem;
+}
+
+.results-column:nth-child(1) { --svg-bg: var(--yellow-1); --svg-fg: var(--violet-3); }
+.results-column:nth-child(2) { --svg-bg: var(--lake-1); --svg-fg: var(--cream); }
+.results-column:nth-child(3) { --svg-bg: var(--corn-1); --svg-fg: var(--yellow-1); }
+.results-column:nth-child(4) { --svg-bg: var(--monarch-1); --svg-fg: var(--cardinal-1); }
+
+.results-cta {
+  text-align: center;
+  margin-top: 4rem;
 }
 
 /* Team Section */

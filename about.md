@@ -38,35 +38,35 @@ permalink: /about/
 
       <div class="steps">
         <div class="step step-1">
-          {% include number-1.html %}
+          <img src="{{ '/assets/images/illustrations/1-monarch.png' | relative_url }}" alt="" class="step-illustration">
           <div class="step-content">
             <h3>Start small to build momentum</h3>
             <p>We break complex problems into small, testable chunks.</p>
           </div>
         </div>
         <div class="step step-2">
-          {% include number-2.html %}
+          <img src="{{ '/assets/images/illustrations/2-violet.png' | relative_url }}" alt="" class="step-illustration">
           <div class="step-content">
             <h3>Work with those close to the problem</h3>
             <p>We collaborate deeply with government staff and nonprofit partners.</p>
           </div>
         </div>
         <div class="step step-3">
-          {% include number-3.html %}
+          <img src="{{ '/assets/images/illustrations/3-boat.png' | relative_url }}" alt="" class="step-illustration">
           <div class="step-content">
             <h3>Test ideas with real people</h3>
             <p>We take ideas out of the theoretical and test them in the real world as quickly as possible.</p>
           </div>
         </div>
         <div class="step step-4">
-          {% include number-4.html %}
+          <img src="{{ '/assets/images/illustrations/4-cardinal.png' | relative_url }}" alt="" class="step-illustration">
           <div class="step-content">
             <h3>Deliver early and often</h3>
             <p>We don't wait for the perfect version of "done" before we start delivering.</p>
           </div>
         </div>
         <div class="step step-5">
-          {% include number-5.html %}
+          <img src="{{ '/assets/images/illustrations/5-corn.png' | relative_url }}" alt="" class="step-illustration">
           <div class="step-content">
             <h3>Share what we learn</h3>
             <p>We work in the open and publish as we go.</p>
