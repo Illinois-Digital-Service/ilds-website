@@ -53,21 +53,24 @@ title: Illinois Digital Service
 
     <div class="results-columns">
       <div class="results-column">
-        <img src="{{ '/assets/images/illustrations/boat.png' | relative_url }}" alt="" class="results-illustration">
+        {% include number-1.html %}
         <p>Gets people what they need with less friction</p>
       </div>
       <div class="results-column">
-        <img src="{{ '/assets/images/illustrations/monarch.png' | relative_url }}" alt="" class="results-illustration">
+        {% include number-2.html %}
         <p>Creates simple experiences that do not overwhelm</p>
       </div>
       <div class="results-column">
-        <img src="{{ '/assets/images/illustrations/violet.png' | relative_url }}" alt="" class="results-illustration">
+        {% include number-3.html %}
         <p>Delivers accessible services available in many languages</p>
       </div>
       <div class="results-column">
-        <img src="{{ '/assets/images/illustrations/cardinal.png' | relative_url }}" alt="" class="results-illustration">
+        {% include number-4.html %}
         <p>Makes life easier for government delivery staff</p>
       </div>
+    </div>
+    <div class="results-cta">
+      <a href="{{ '/about/' | relative_url }}" class="link-underline"><span>Learn more about us</span></a>
     </div>
   </div>
 </section>
