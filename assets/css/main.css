@@ -857,6 +857,10 @@ main {
   align-items: flex-start;
 }
 
+.page-process .how-we-work-about .steps {
+  gap: 8rem;
+}
+
 .page-process .how-we-work-about .step-content h3 {
   color: var(--green);
 }
