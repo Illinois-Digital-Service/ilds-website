@@ -28,9 +28,9 @@ permalink: /process/
           <div class="step-content">
             <h3>Conversation</h3>
             <p><strong>Our process starts with getting to know you.</strong></p>
-            <ul class="asterisk-list">
-              {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="We learn about your goals, challenges, and strengths" %}
-              {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="You learn about us and what we can offer" %}
+            <ul class="plain-list">
+              <li>We learn about your goals, challenges, and strengths</li>
+              <li>You learn about us and what we can offer</li>
             </ul>
             {% include time-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="30-60 minute virtual chat" %}
           </div>
@@ -44,10 +44,10 @@ permalink: /process/
             <p>We make lightweight prototypes to show (not tell) what new technology can look like.</p>
             <br/>
             <p>Example Outcomes:</p>
-            <ul class="asterisk-list">
-              {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="Alignment on a problem statement" %}
-              {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="A prioritzed list of user groups to serve" %}
-              {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="A clear starting point for progress" %}
+            <ul class="plain-list">
+              <li>Alignment on a problem statement</li>
+              <li>A prioritized list of user groups to serve</li>
+              <li>A clear starting point for progress</li>
             </ul>
             {% include time-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="2 hours, in-person" %}
           </div>
@@ -59,10 +59,10 @@ permalink: /process/
             <p><strong>Then, we do research to learn about your users and deliver concrete improvements.</strong></p>
             <br/>
             <p>Example Outcomes:</p>
-            <ul class="asterisk-list">
-              {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="A redesigned web page becomes easier to navigate" %}
-              {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="A service design blueprint makes a process clearer" %}
-              {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="A data analysis sprint helps you steer your program" %}
+            <ul class="plain-list">
+              <li>A redesigned web page becomes easier to navigate</li>
+              <li>A service design blueprint makes a process clearer</li>
+              <li>A data analysis sprint helps you steer your program</li>
             </ul>
             {% include time-bullet.html bg="var(--corn-4)" fg="var(--green)" text="16 weeks" %}
           </div>
@@ -78,10 +78,10 @@ permalink: /process/
             <p>Then we will work with you to deliver on the roadmap, step by step.</p>
             <br/>
             <p>Example Outcomes:</p>
-            <ul class="asterisk-list">
-              {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="A large, complex website is reorganized around user needs" %}
-              {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="A redesigned backend system becomes easier for staff to use" %}
-              {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="An interdepartmental process runs faster and smoother" %}
+            <ul class="plain-list">
+              <li>A large, complex website is reorganized around user needs</li>
+              <li>A redesigned backend system becomes easier for staff to use</li>
+              <li>An interdepartmental process runs faster and smoother</li>
             </ul>
             {% include time-bullet.html bg="var(--monarch-4)" fg="var(--orange)" text="~12 months" %}
           </div>
@@ -97,17 +97,25 @@ permalink: /process/
             <p>Ultimately, success means you have no further need for Illinois Digital Service.</p>
             <br/>
             <p>Example Outcomes:</p>
-            <ul class="asterisk-list">
-              {% include asterisk-bullet.html bg="var(--yellow-1)" fg="var(--green)" text="Your team runs regular testing and research with users" %}
-              {% include asterisk-bullet.html bg="var(--lake-4)" fg="var(--blue)" text="You feel unstuck when it comes to technology" %}
-              {% include asterisk-bullet.html bg="var(--corn-4)" fg="var(--green)" text="You can lead technology and design changes with confidence" %}
+            <ul class="plain-list">
+              <li>Your team runs regular testing and research with users</li>
+              <li>You feel unstuck when it comes to technology</li>
+              <li>You can lead technology and design changes with confidence</li>
             </ul>
             {% include time-bullet.html bg="var(--cardinal-4)" fg="var(--red)" text="~12 months" %}
           </div>
         </div>
       </div>
 
-      <p class="process-cta">Ready to get started? <a href="{{ '/connect/' | relative_url }}" class="link-underline"><span>Get in touch</span></a>.</p>
     </div>
   </section>
+
+  {% include cta-section.html
+    heading="Ready to get started? Get in touch."
+    heading_url="/connect/"
+    bg_image="/assets/images/background_images/prairie.jpg"
+    text_color="var(--cream)"
+    link_color="var(--cream)"
+    overlay=true
+  %}
 </div>

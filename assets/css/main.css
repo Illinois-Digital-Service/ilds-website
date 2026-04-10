@@ -144,7 +144,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: normal;
 }
@@ -197,10 +197,6 @@ h4,
 h5,
 .h5 {
   font-size: 2.5rem;
-}
-
-p {
-  font-size: 2rem;
 }
 
 small,
@@ -771,6 +767,16 @@ main {
   margin: 3rem 0;
 }
 
+.plain-list {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.plain-list li {
+  margin-bottom: 0.75rem;
+}
+
 .asterisk-bullet {
   display: flex;
   align-items: center;
@@ -847,6 +853,14 @@ main {
   color: var(--cream);
 }
 
+.page-process .how-we-work-about .step {
+  align-items: flex-start;
+}
+
+.page-process .how-we-work-about .steps {
+  gap: 8rem;
+}
+
 .page-process .how-we-work-about .step-content h3 {
   color: var(--green);
 }
@@ -904,12 +918,10 @@ main {
 .page-process .how-we-work-about .label {
   margin-bottom: 1.5rem;
   color: var(--green);
-  font-size: 1.5rem;
-  letter-spacing: 0.35rem;
 }
 
 .page-process .how-we-work-about .lead {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
@@ -938,9 +950,6 @@ main {
   font-size: 2.5rem;
 }
 
-.page-process .how-we-work-about .step-content p {
-  font-size: 2rem;
-}
 
 .page-process .how-we-work-about .step-content p strong {
   color: var(--green);
