@@ -8,7 +8,7 @@ permalink: /process/
   {% include page-heading.html
     title="Process"
     show_logo=true
-    bg_image="/assets/images/background_images/david-sink-NBzakkfG9LA-unsplash.jpg"
+    bg_image="/assets/images/background_images/david-sink-unsplash.webp"
     bg_position="center"
     overlay=true
   %}

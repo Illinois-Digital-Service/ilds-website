@@ -7,7 +7,7 @@ permalink: /privacy/
 <div class="page-privacy">
   {% include page-heading.html
     title="Privacy Policy"
-    bg_image="/assets/images/background_images/david-sink-NBzakkfG9LA-unsplash.jpg"
+    bg_image="/assets/images/background_images/david-sink-unsplash.webp"
     overlay=true
   %}
 
