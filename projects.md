@@ -8,7 +8,7 @@ permalink: /projects/
   {% include page-heading.html
     title="Projects"
     show_logo=true
-    bg_image="/assets/images/background_images/haley-hamilton-BHZKY4Jzi_I-unsplash.jpg"
+    bg_image="/assets/images/background_images/haley-hamilton-unsplash.webp"
     bg_position="center"
     overlay=true
   %}
