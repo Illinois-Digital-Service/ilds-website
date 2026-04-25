@@ -1723,3 +1723,39 @@ main {
     grid-template-columns: 1fr;
   }
 }
+
+/* ========================================
+   Accessibility: High Contrast
+   ======================================== */
+
+@media (prefers-contrast: more) {
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+  }
+
+  .hero-logo {
+    color: #ffffff;
+    fill: #ffffff;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 1));
+  }
+}
+
+@media (forced-colors: active) {
+  .hero {
+    background-color: Canvas;
+  }
+
+  .hero-logo {
+    forced-color-adjust: none;
+    color: ButtonText;
+    fill: ButtonText;
+    filter: drop-shadow(0 0 4px Canvas);
+  }
+}

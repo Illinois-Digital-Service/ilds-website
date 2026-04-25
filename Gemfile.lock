@@ -46,6 +46,7 @@ GEM
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
     ffi (1.17.2)
+    ffi (1.17.2-arm64-darwin)
     ffi (1.17.2-x64-mingw-ucrt)
     ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
@@ -237,6 +238,8 @@ GEM
       prism (~> 1.5)
     net-http (0.9.1)
       uri (>= 0.11.1)
+    nokogiri (1.19.0-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.19.0-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.19.0-x86_64-linux-gnu)
@@ -280,6 +283,7 @@ GEM
     webrick (1.9.2)
 
 PLATFORMS
+  arm64-darwin-25
   x64-mingw-ucrt
   x86_64-linux
 
@@ -313,6 +317,7 @@ CHECKSUMS
   faraday (2.14.0) sha256=8699cfe5d97e55268f2596f9a9d5a43736808a943714e3d9a53e6110593941cd
   faraday-net_http (3.4.2) sha256=f147758260d3526939bf57ecf911682f94926a3666502e24c69992765875906c
   ffi (1.17.2) sha256=297235842e5947cc3036ebe64077584bff583cd7a4e94e9a02fdec399ef46da6
+  ffi (1.17.2-arm64-darwin)
   ffi (1.17.2-x64-mingw-ucrt) sha256=15d2da54ee578657a333a6059ed16eaba1cbd794ceecd15944825b65c8381ac0
   ffi (1.17.2-x86_64-linux-gnu) sha256=05d2026fc9dbb7cfd21a5934559f16293815b7ce0314846fee2ac8efbdb823ea
   forwardable-extended (2.6.0) sha256=1bec948c469bbddfadeb3bd90eb8c85f6e627a412a3e852acfd7eaedbac3ec97
@@ -369,6 +374,7 @@ CHECKSUMS
   minima (2.5.1) sha256=520e52bc631fb16cbb8100660f6caa44f97859e2fa7e397d508deb18739567be
   minitest (6.0.1) sha256=7854c74f48e2e975969062833adc4013f249a4b212f5e7b9d5c040bf838d54bb
   net-http (0.9.1) sha256=25ba0b67c63e89df626ed8fac771d0ad24ad151a858af2cc8e6a716ca4336996
+  nokogiri (1.19.0-arm64-darwin)
   nokogiri (1.19.0-x64-mingw-ucrt) sha256=05d7ed2d95731edc9bef2811522dc396df3e476ef0d9c76793a9fca81cab056b
   nokogiri (1.19.0-x86_64-linux-gnu) sha256=f482b95c713d60031d48c44ce14562f8d2ce31e3a9e8dd0ccb131e9e5a68b58c
   octokit (4.25.1) sha256=c02092ee82dcdfe84db0e0ea630a70d32becc54245a4f0bacfd21c010df09b96
