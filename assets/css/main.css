@@ -340,6 +340,16 @@ label,
   .site-header.is-scrolled .nav-toggle {
     transform: scale(0.85);
   }
+
+  .how-we-work-about .step {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-we-work-about .step-illustration {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 /* Offset for fixed header */
