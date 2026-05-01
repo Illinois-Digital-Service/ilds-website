@@ -41,6 +41,7 @@ jobs:
           JEKYLL_ENV: production
         run: |
           git checkout main
+          bundle install
           bundle exec jekyll build
           mv _site _site_production
           git checkout ${{ github.sha }}
