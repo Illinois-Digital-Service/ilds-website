@@ -57,6 +57,13 @@ Key files and folders:
 - `_layouts/` - HTML templates
 - `_includes/` - Reusable components
 
+Update gems in `Gemfile.lock`:
+
+
+```
+bundle update
+```
+
 ## Deployment
 
 This site is configured for GitHub Pages with two workflows:
