@@ -1380,6 +1380,400 @@ main {
   border-radius: 0.5rem;
 }
 
+/* Impact Page */
+.impact-intro,
+.impact-stats-section,
+.impact-project {
+  background-color: var(--cream);
+  padding: 10rem 0;
+}
+
+.impact-project {
+  background-color: var(--off-white);
+}
+
+/* Alternate backgrounds so neighboring sections read as distinct:
+   intro (cream) → DOL (off-white) → Chicago (cream) → more (off-white) → stats (yellow) */
+.impact-project.impact-project-alt {
+  background-color: var(--cream);
+}
+
+.impact-project.impact-more {
+  background-color: var(--off-white);
+}
+
+.impact-more .impact-more-card {
+  background-color: var(--cream);
+}
+
+.impact-intro .label {
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.impact-intro .lead {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+}
+
+.impact-stats-section {
+  position: relative;
+  background-color: var(--yellow-1);
+  border-top: 3px solid var(--black);
+  border-bottom: 3px solid var(--black);
+}
+
+.impact-stats-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: var(--font-display);
+  font-size: 6rem;
+  line-height: 1.1;
+  color: var(--black);
+  margin-bottom: 6rem;
+}
+
+.impact-stats-heading .label {
+  font-size: 1.75rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Bold cards with a hard offset shadow, each tilted a little differently */
+.impact-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 4rem;
+  border: 3px solid var(--black);
+  border-radius: 1.5rem;
+  background-color: var(--stat-bg);
+  color: var(--stat-fg);
+  box-shadow: 1.5rem 1.5rem 0 var(--black);
+  transform: rotate(var(--stat-tilt, 0deg));
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.impact-stat:hover {
+  transform: rotate(0) translate(-0.5rem, -0.5rem);
+  box-shadow: 2rem 2rem 0 var(--black);
+}
+
+.impact-stat-1 { --stat-bg: var(--blue); --stat-fg: var(--cream); --stat-accent: var(--lake-4); --stat-tilt: -1.5deg; }
+.impact-stat-2 { --stat-bg: var(--green); --stat-fg: var(--cream); --stat-accent: var(--corn-4); --stat-tilt: 1deg; }
+.impact-stat-3 { --stat-bg: var(--orange); --stat-fg: var(--cream); --stat-accent: var(--monarch-4); --stat-tilt: 1.25deg; }
+.impact-stat-4 { --stat-bg: var(--maroon); --stat-fg: var(--cream); --stat-accent: var(--cardinal-4); --stat-tilt: -1deg; }
+
+.impact-stat-number {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--stat-accent);
+  padding-bottom: 2rem;
+  border-bottom: 3px dashed currentColor;
+}
+
+.impact-stat-number-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 6.5rem;
+}
+
+.impact-stat-text {
+  font-weight: 500;
+}
+
+.impact-project .label {
+  display: block;
+  color: var(--blue);
+  margin-bottom: 3rem;
+}
+
+.impact-project .label.impact-partner {
+  font-size: 2.25rem;
+  letter-spacing: 0.25rem;
+  line-height: 1.5;
+}
+
+.impact-project h2 {
+  font-family: var(--font-display);
+  font-size: 6rem;
+  color: var(--green);
+  margin-bottom: 5.5rem;
+}
+
+.impact-project .asterisk-list {
+  margin: 0;
+}
+
+.impact-project .asterisk-bullet:last-child {
+  margin-bottom: 0;
+}
+
+.impact-project .asterisk-bullet {
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.impact-project .asterisk-bullet a,
+.impact-more-card a {
+  color: var(--blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.impact-project .asterisk-bullet a:hover,
+.impact-more-card a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.impact-figures {
+  margin-top: 8rem;
+}
+
+/* Overlapping, tilted pair: first image sits back left, second sits in front right */
+.impact-figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 82%;
+  transition: transform var(--transition);
+}
+
+.impact-figure:first-child {
+  flex-direction: column-reverse;
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.impact-figure:last-child {
+  margin-left: auto;
+  margin-top: -10%;
+  transform: rotate(2.5deg);
+  z-index: 2;
+}
+
+.impact-figure.is-portrait {
+  width: 62%;
+}
+
+.impact-figure.is-portrait + .impact-figure {
+  margin-top: -28%;
+}
+
+/* Bring either image to the front and straighten it on hover */
+.impact-figure:hover {
+  transform: rotate(0) scale(1.03);
+  z-index: 3;
+}
+
+.impact-figure img {
+  width: 100%;
+  border: 3px solid var(--blue);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.impact-figure figcaption {
+  align-self: flex-start;
+  max-width: 90%;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  background-color: var(--blue);
+  color: var(--cream);
+  font-family: var(--font-mono);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.impact-figure:last-child figcaption {
+  align-self: flex-end;
+  background-color: var(--green);
+}
+
+/* Draft password gate */
+.impact-gate {
+  background-color: var(--cream);
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.impact-gate .label {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.impact-gate h1 {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  color: var(--green);
+  margin-bottom: 2rem;
+}
+
+.impact-gate form {
+  max-width: 64rem;
+  margin: 5rem auto 0;
+  text-align: left;
+}
+
+.impact-gate label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.impact-gate-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.impact-gate input {
+  flex: 1 1 30rem;
+  padding: 1.5rem 2rem;
+  border: 3px solid var(--blue);
+  border-radius: 1rem;
+  background-color: var(--off-white);
+  color: var(--black);
+}
+
+.impact-gate button {
+  padding: 1.5rem 4rem;
+  border: 3px solid var(--blue);
+  border-radius: 1rem;
+  background-color: var(--blue);
+  color: var(--cream);
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.impact-gate button:hover {
+  transform: translateY(-0.5rem);
+}
+
+.impact-gate input:focus-visible,
+.impact-gate button:focus-visible {
+  outline: 3px solid var(--monarch-1);
+  outline-offset: 3px;
+}
+
+.impact-gate-error {
+  min-height: 3rem;
+  margin-top: 1.5rem;
+  color: var(--red);
+  font-weight: 600;
+}
+
+/* Building the field cards */
+.impact-more-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.impact-more-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem;
+  border: 3px solid var(--blue);
+  border-radius: 1.5rem;
+  background-color: var(--off-white);
+}
+
+.impact-more-illustration {
+  width: 18rem;
+  height: 18rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.impact-more-content h3 {
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+.impact-more-content .plain-list {
+  margin-bottom: 0;
+}
+
+.impact-more-content p + p,
+.impact-more-line {
+  margin-top: 1.5rem;
+}
+
+/* Continues a sentence on its own line, spaced like a new paragraph */
+.impact-more-line {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .impact-figure,
+  .impact-stat {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .impact-intro .container,
+  .impact-stats-section .container,
+  .impact-project .container {
+    max-width: calc(180rem * 8 / 12);
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+  }
+
+  .impact-stats-heading {
+    font-size: 8rem;
+  }
+
+  .impact-stat-number {
+    font-size: 9rem;
+  }
+
+  .impact-stat-number-pair {
+    font-size: 7rem;
+  }
+
+  .impact-more-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .impact-figure {
+    width: 70%;
+  }
+
+  .impact-figure.is-portrait {
+    width: 52%;
+  }
+
+}
+
 /* Connect Page */
 .connect-government {
   background-color: var(--green);

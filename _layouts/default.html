@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
-  {% if jekyll.environment == "preview" %}
+  {% if jekyll.environment == "preview" or page.noindex %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
   <link rel="preconnect" href="https://fonts.googleapis.com">
