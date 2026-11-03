@@ -98,9 +98,10 @@ permalink: /about/
       <br/>
       <h2 class="label">ADVISORY COMMITTEE</h2>
       <div class="team-grid">
-        {% include team-card.html name="Andrew Coy" role="Advisor" %}
-        {% include team-card.html name="Frank Zhu" role="Advisor" %}
         {% include team-card.html name="Jennifer Phillips" role="Advisor" %}
+        {% include team-card.html name="Matthew Saniie" role="Advisor" %}
+        {% include team-card.html name="Nichole Weems" role="Advisor" %}
+        {% include team-card.html name="Frank Zhu" role="Advisor" %}
       </div>
     </div>
   </section>
