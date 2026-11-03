@@ -87,6 +87,9 @@ permalink: /about/
       <br/>
       <h2 class="label">CONTRIBUTORS</h2>
       <div class="team-grid">
+        {% include team-card.html name="Will Sullivan" role="Product Manager" %}
+        {% include team-card.html name="Karen Yi" role="UX Generalist" %}
+        {% include team-card.html name="Ella Contreras" role="UX Researcher - Spanish Fluency" %}
         {% include team-card.html name="Omar Gonzalez" role="Talent Advisor" %}
         {% include team-card.html name="Nathalie Rayter" role="Product Manager" %}
         {% include team-card.html name="Kaleigh Simmons" role="Co-Founder and Content Designer" %}
