@@ -90,6 +90,8 @@ permalink: /about/
         {% include team-card.html name="Will Sullivan" role="Product Manager" %}
         {% include team-card.html name="Karen Yi" role="UX Generalist" %}
         {% include team-card.html name="Ella Contreras" role="UX Researcher - Spanish Fluency" %}
+        {% include team-card.html name="Marcella Corona" role="Urban Planner and Service Designer" %}
+        {% include team-card.html name="Emily Theis" role="Product Advisor" %}
         {% include team-card.html name="Omar Gonzalez" role="Talent Advisor" %}
         {% include team-card.html name="Nathalie Rayter" role="Product Manager" %}
         {% include team-card.html name="Kaleigh Simmons" role="Co-Founder and Content Designer" %}
