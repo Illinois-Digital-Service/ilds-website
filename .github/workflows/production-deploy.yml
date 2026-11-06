@@ -14,15 +14,8 @@ permissions:
   contents: read
 
 jobs:
-  production-deploy:
+  build:
     runs-on: ubuntu-24.04
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -46,6 +39,20 @@ jobs:
         with:
           path: _site
 
+  # Deploy runs as its own job so that "Re-run failed jobs" retries only the
+  # deploy, reusing the artifact above instead of uploading a duplicate
+  # (which makes deploy-pages fail with "Multiple artifacts named github-pages").
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
