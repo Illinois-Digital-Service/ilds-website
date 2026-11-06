@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   preview-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Checkout (full for main + current ref)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -59,13 +59,13 @@ jobs:
           cp -r _site/. pages-artifact/preview-deploy/
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: pages-artifact
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Preview URL
         run: |
